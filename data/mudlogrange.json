@@ -1,0 +1,228 @@
+{
+    "lines": [
+        {
+            "showname": "Time",
+            "linename": "time"
+        },
+        {
+            "showname": "Depth",
+            "linename": "mdepth"
+        },
+        {
+            "showname": "TVD",
+            "linename": "vdepth"
+        },
+        {
+            "showname": "BitDepth",
+            "linename": "bitDepth"
+        },
+        {
+            "showname": "LagDepth",
+            "linename": "retDepth"
+        },
+        {
+            "showname": "LagTime",
+            "linename": "spare2"
+        },
+        {
+            "showname": "HKLA",
+            "linename": "hkld"
+        },
+        {
+            "showname": "WOBA",
+            "linename": "wobAvg"
+        },
+        {
+            "showname": "BLKPOS",
+            "linename": "BLKPOS"
+        },
+        {
+            "showname": "TORQA",
+            "linename": "tqAvg"
+        },
+        {
+            "showname": "Torque",
+            "linename": "tqMax"
+        },
+        {
+            "showname": "INSTROP",
+            "linename": "instrop"
+        },
+        {
+            "showname": "RPM",
+            "linename": "rpm"
+        },
+        {
+            "showname": "ROPA",
+            "linename": "ropAvg"
+        },
+        {
+            "showname": "HookHeight",
+            "linename": "bpi"
+        },
+        {
+            "showname": "SPP",
+            "linename": "spp"
+        },
+        {
+            "showname": "SPM1",
+            "linename": "spm1"
+        },
+        {
+            "showname": "SPM2",
+            "linename": "spm2"
+        },
+        {
+            "showname": "SPM3",
+            "linename": "spm3"
+        },
+        {
+            "showname": "MFOP",
+            "linename": "mfoutAvg"
+        },
+        {
+            "showname": "H2S1",
+            "linename": "hsx"
+        },
+        {
+            "showname": "H2S2",
+            "linename": "H2S2"
+        },
+        {
+            "showname": "H2S3",
+            "linename": "H2S3"
+        },
+        {
+            "showname": "GainLoss",
+            "linename": "tvol14"
+        },
+        {
+            "showname": "Flowout",
+            "linename": "mfopAvg"
+        },
+        {
+            "showname": "CHKP",
+            "linename": "chkp"
+        },
+        {
+            "showname": "MTIA",
+            "linename": "mtinAvg"
+        },
+        {
+            "showname": "MTOA",
+            "linename": "mtoutAvg"
+        },
+        {
+            "showname": "MCIA",
+            "linename": "mcinAvg"
+        },
+        {
+            "showname": "MCOA",
+            "linename": "mcoutAvg"
+        },
+        {
+            "showname": "MWI",
+            "linename": "mdinAvg"
+        },
+        {
+            "showname": "MWO",
+            "linename": "mdoutAvg"
+        },
+        {
+            "showname": "Actpvt",
+            "linename": "tvolact"
+        },
+        {
+            "showname": "TVOLCTOT",
+            "linename": "tvolctot"
+        },
+        {
+            "showname": "Pit1",
+            "linename": "tvol01"
+        },
+        {
+            "showname": "Pit2",
+            "linename": "tvol02"
+        },
+        {
+            "showname": "Pit3",
+            "linename": "tvol03"
+        },
+        {
+            "showname": "Pit4",
+            "linename": "tvol04"
+        },
+        {
+            "showname": "TripTank",
+            "linename": "ttvol1"
+        },
+        {
+            "showname": "PVT",
+            "linename": "tvoltot"
+        },
+        {
+            "showname": "SandTrip",
+            "linename": "tvol05"
+        },
+        {
+            "showname": "TotalGas",
+            "linename": "gasAvg"
+        },
+        {
+            "showname": "C1",
+            "linename": "methane"
+        },
+        {
+            "showname": "C2",
+            "linename": "ethane"
+        },
+        {
+            "showname": "C3",
+            "linename": "propane"
+        },
+        {
+            "showname": "IC4",
+            "linename": "ibutane"
+        },
+        {
+            "showname": "NC4",
+            "linename": "nbutane"
+        },
+        {
+            "showname": "IC5",
+            "linename": "ipentane"
+        },
+        {
+            "showname": "NC5",
+            "linename": "npentane"
+        },
+        {
+            "showname": "MFI",
+            "linename": "mfinAvg"
+        },
+        {
+            "showname": "MFO",
+            "linename": "mfoutAvg"
+        },
+        {
+            "showname": "MTO",
+            "linename": "mtoutAvg"
+        },
+        {
+            "showname": "MTI",
+            "linename": "mtinAvg"
+        },
+        {
+            "showname": "STKC",
+            "linename": "strokes"
+        },
+        {
+            "showname": "ECD",
+            "linename": "spare1"
+        },
+        {
+            "showname": "Well Status",
+            "linename": "act_code"
+        }
+    ]
+}

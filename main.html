@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Realrig</title>
+    <!--lib库-->
+    <script src="libs/d3.js"></script>
+    <script src="libs/uuid.js"></script>
+    <script src="libs/jquery-2.1.1.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.css"rel="stylesheet"/>
+    <script src="libs/bootstrap.js"></script>
+    <script src="libs/bootstrapValidator.js"></script>
+
+    <link href="css/bootstrap-treeview.min.css" rel="stylesheet">
+    <script src="libs/bootstrap-treeview.js"></script>
+
+    <link href="css/jquery.minicolors.css" rel="stylesheet">
+    <script src="libs/jquery.minicolors.js"></script>
+
+    <link href="css/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+    <script src="libs/jquery.bootstrap-touchspin.min.js"></script>
+
+    <link href="css/bootstrap-select.min.css" rel="stylesheet">
+    <script src="libs/bootstrap-select.js"></script>
+
+    <link href="css/bootstrap-dialog.min.css" rel="stylesheet">
+    <script src="libs/bootstrap-dialog.min.js"></script>
+
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #999;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    #999;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #999;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    #999;
+    }
+
+    .content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .modal.modal-wide .modal-dialog {
+        width: 90%;
+    }
+
+    .modal-wide .modal-body {
+        overflow-y: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .modal-header
+    {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .modal-footer
+    {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .treeview {
+        height: 450px;
+        max-height: 400px;
+        overflow: auto;
+    }
+
+    .colorgraph {
+        height: 5px;
+        border-top: 0;
+        background: #c4e17f;
+        border-radius: 5px;
+        background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+        background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    }
+    .control-label
+    {
+        padding: 0px;
+    }
+    .form-control#input-curve-formulaA
+    {
+        width: 30%;
+    }
+    .form-control#input-curve-formulaB
+    {
+        width: 30%;
+    }
+    .label-formula
+    {
+        width:30px;
+    }
+    .form-control#input-intercept
+    {
+        width: 90px;
+    }
+    .form-control#input-density
+    {
+        width:60px;
+    }
+    .digitdiv
+    {
+        background-color: #263e86;
+        border: 3px;
+        border-color: #004700;
+        width: 165px;
+        height: 58px;
+        position: absolute;
+    }
+
+    .digitproplabel
+    {
+        width: 163px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .digitvaluelabel
+    {
+        width: 163px;
+        color: #000000;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .edit-parameter-ul li {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .edit-template-ul li {
+        font-size: 20px;
+        text-align: center;
+    }
+    .text-class {
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .navbar-static-top
+    {
+        margin-bottom: 0px;
+    }
+</style>
+<script>
+    $(document).ready(function(){     //使用jquery的ready方法似的加载运行
+        if (window.screen) {              //判断浏览器是否支持window.screen判断浏览器是否支持screen
+            var myw = screen.availWidth;   //定义一个myw，接受到当前全屏的宽
+            var myh = screen.availHeight;  //定义一个myw，接受到当前全屏的高
+            window.moveTo(0, 0);           //把window放在左上脚
+            window.resizeTo(myw, myh);     //把当前窗体的长宽跳转为myw和myh
+        }
+    });
+</script>
+<body>
+
+<nav class="navbar navbar-default navbar-static-top" id="navbar-main" role="navigation">
+    <div class="navbar-header">
+    </div>
+    <div>
+        <div class="navbar-left">
+            <button type="button" class="btn navbar-btn btn-primary navbar-btn" id="navbar-btn-edit-parameter">
+                <span class="glyphicon glyphicon-edit"></span> Edit Parameter
+            </button>
+
+            <button type="button" class="btn navbar-btn btn-success navbar-btn" id="navbar-btn-edit-template">
+                <span class="glyphicon glyphicon-edit"></span> Edit Template
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div id="digitContainer"></div>
+    <div id="templateHead"></div>
+    <div id="templateBody">
+        <div id="templateBodyContainer"></div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade modal-wide" id="modal-template" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static" data-keyboard="false" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade modal-wide" id="modal-parameter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" data-backdrop="static" data-keyboard="false" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<script src="vo/TemplateVO.js"></script>
+<script src="view/digit/DigitParameterDIV.js"></script>
+<script src="view/head/TrackHeadView.js"></script>
+<script src="view/head/CurveHeadView.js"></script>
+<script src="view/body/TrackBodyView.js"></script>
+<script src="realrigtemplatedialog.js"></script>
+<script src="realrigparameterdialog.js"></script>
+<script src='realrigtemplate.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Edit Template</title>
+</head>
+<body>
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title">Edit Template</h4>
+</div>
+<!-- /modal-header -->
+<div class="modal-body">
+    <div class="col-md-4" id="dialog-template-left">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#edit-template-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="edit-template-navbar">
+                    <ul class="nav navbar-nav nav-tabs edit-template-ul">
+                        <li><a id="edit-track-add" href="#"><span class="glyphicon glyphicon-plus"></span><span class="text-class">Add Track</span></a></li>
+                        <li id="edit-track-remove-li" class="disabled"><a id="edit-track-remove" href="#"><span class="glyphicon glyphicon-remove"></span><span class="text-class">Delete Track</span></a></li>
+                        <li id="edit-curve-add-li" class="disabled"><a id="edit-curve-add" href="#"><span class="glyphicon glyphicon-plus-sign"></span><span class="text-class">Add Curve</span></a></li>
+                        <li id="edit-curve-remove-li" class="disabled"><a id="edit-curve-remove" href="#"><span class="glyphicon glyphicon-remove-sign"></span><span class="text-class">Delete Curve</span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div id="treeview-track" class="treeview"></div>
+    </div>
+    <div class="col-md-8">
+        <div id="edit-track" style="display: none">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <form id="form-edit-track" class="form-horizontal" role="form">
+                        <h2 id="edit-track-header"></h2>
+                        <hr class="colorgraph">
+                        <div class="form-group">
+                            <label for="input-track-title" class="col-xs-3 col-sm-3 col-md-3 control-label">Title</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <input type="text" name="input_track_title" id="input-track-title" class="form-control input-xs"
+                                       placeholder="Title" tabindex="1"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-xs-3 col-sm-3 col-md-3 control-label">Track Type</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <div class="radio col-sm-3">
+                                    <label>
+                                        <input type="radio" class="radio_tracktype" name="radio_track_type" id="radio-track-type1" value="0" tabindex="2" checked>
+                                        normal
+                                    </label>
+                                </div>
+                                <div class="radio col-sm-9">
+                                    <label class="col-sm-6">
+                                        <input type="radio" class="radio_tracktype" name="radio_track_type" id="radio-track-type2" value="1" tabindex="3"/>
+                                        Log
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-track-linewidth" class="col-xs-3 col-sm-3 col-md-3 control-label">Line Width</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <input id="input-track-linewidth" type="text" name="input_track_linewidth"
+                                       class="form-control input-xs" placeholder="Line Width" tabindex="4"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-track-linecolor" class="col-xs-3 col-sm-3 col-md-3 control-label">Color</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <input type="text" id="input-track-linecolor" name="input_track_linecolor" value="" class="form-control" tabindex="5"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-track-framewidth" class="col-xs-3 col-sm-3 col-md-3 control-label">Frame Width</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <input id="input-track-framewidth" type="text" name="input_track_framewidth"
+                                       class="form-control input-xs" placeholder="Frame Width" tabindex="5"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-track-framecolor" class="col-xs-3 col-sm-3 col-md-3 control-label">Frame Color</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <input type="text" id="input-track-framecolor" name="input_track_framecolor" value="" class="form-control" tabindex="6"/>
+                            </div>
+                        </div>
+
+                        <div id="div-min" class="form-group">
+                            <label for="input-track-title" class="col-xs-3 col-sm-3 col-md-3 control-label">Min.</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <input type="text" name="input_track_min" id="input-track-min" class="form-control input-xs"
+                                       placeholder="Min." tabindex="7"/>
+                            </div>
+                        </div>
+
+                        <div id="div-max" class="form-group">
+                            <label for="input-track-title" class="col-xs-3 col-sm-3 col-md-3 control-label">Max.</label>
+                            <div class="col-xs-9 col-sm-9 col-md-9">
+                                <input type="text" name="input_track_max" id="input-track-max" class="form-control input-xs"
+                                       placeholder="Max." tabindex="8"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button id="btn-track-save" type="button" class="btn btn-primary col-sm-offset-10">Save</button>
+                        </div>
+                    </form><!--form结束-->
+                </div><!--row结束-->
+            </div><!--edit-track-->
+        </div>
+
+        <!--编辑curve-->
+        <div id="edit-curve" style="display: none">
+            <form id="form-edit-curve" class="form-horizontal" role="form">
+                <h2 id="edit-curve-header"></h2>
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label for="select-curve-name" class="col-xs-4 col-sm-4 col-md-4 control-label">Curve Name</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <select name="select_curve_name" id="select-curve-name" class="form-control selectpicker show-tick"
+                                        data-size="10" tabindex="1"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-curve-displayname" class="col-xs-4 col-sm-4 col-md-4 control-label">Display Name</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input type="text" name="input_curve_displayname" id="input-curve-displayname" class="form-control input-xs"
+                                        placeholder="Curve Name" tabindex="2"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-curve-unit" class="col-xs-4 col-sm-4 col-md-4 control-label">Unit</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input type="text" name="input-curve-unit" id="input-curve-unit" class="form-control input-xs"
+                                       placeholder="Unit" tabindex="3"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="select-curve-formula" class="col-xs-4 col-sm-4 col-md-4 control-label">Calculator</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <select name="select_curve_formula" id="select-curve-formula" class="form-control selectpicker show-tick" tabindex="4">
+                                    <option value="0">no formula</option>
+                                    <option value="1">y=a*x+b</option>
+                                    <option value="2">y=a/x+b</option>
+                                    <option value="3">y=a*log(x)+b</option>
+                                    <option value="4">y=a/log(x)+b</option>
+                                </select>
+                                <div class="col-xs-12 col-sm-12 col-md-12" id="div-formula" style="display: none">
+                                    <label for="input-curve-formulaA" class="col-xs-4 col-sm-4 col-md-4 control-label label-formula">A:</label>
+                                    <input type="text" name="input_curve_formulaA" id="input-curve-formulaA" class="col-xs-4 col-sm-4 col-md-4 form-control input-xs"
+                                           placeholder="A" tabindex="5"/>
+                                    <label for="input-curve-formulaB" class="col-xs-4 col-sm-4 col-md-4 control-label label-formula">B:</label>
+                                    <input type="text" name="input_curve_formulaB" id="input-curve-formulaB" class="col-xs-4 col-sm-4 col-md-4 form-control input-xs"
+                                           placeholder="B" tabindex="6"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-curve-precision" class="col-xs-4 col-sm-4 col-md-4 control-label">Precision</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input type="text" name="input_curve_precision" id="input-curve-precision" class="form-control input-xs"
+                                       placeholder="Precision" tabindex="7"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-xs-4 col-sm-4 col-md-4 control-label">Line Type</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <div class="radio col-sm-5">
+                                    <label>
+                                        <input type="radio" name="radio-linetype" id="optionsRadios1" value="0" tabindex="8" checked>
+                                        Polyline
+                                    </label>
+                                </div>
+                                <div class="radio col-sm-7">
+                                    <label>
+                                        <input type="radio" name="radio-linetype" id="optionsRadios2" value="1"  tabindex="9">
+                                        Square Line
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-curve-leftvalue" class="col-xs-4 col-sm-4 col-md-4 control-label">Left Value</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input type="text" name="input_curve_leftvalue" id="input-curve-leftvalue" class="form-control input-xs"
+                                       placeholder="Left Value" tabindex="10"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <label for="input-curve-rightvalue" class="col-xs-4 col-sm-4 col-md-4 control-label">Right Value</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input type="text" name="input_curve_rightvalue" id="input-curve-rightvalue" class="form-control input-xs"
+                                       placeholder="Right Value" tabindex="11"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-curve-linecolor" class="col-xs-4 col-sm-4 col-md-4 control-label">Line Color</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8" tabindex="12">
+                                <input type="text" id="input-curve-linecolor" name="input_curve_linecolor" value="" class="form-control" tabindex="9"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-curve-linewidth" class="col-xs-4 col-sm-4 col-md-4 control-label">Line Width</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input id="input-curve-linewidth" type="text" name="input_curve_linewidth"
+                                       class="form-control input-xs" tabindex="13"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="check-penup" class="col-xs-4 col-sm-4 col-md-4 control-label">Pen Up</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input id="check-penup" type="checkbox" class="col-sm-2" tabindex="14"/>
+                                <div class="col-sm-10">
+                                    <label class="col-sm-5">Gap</label>
+                                    <input type="text" class="col-sm-3 form-control" name="input_curve_intercept" id="input-curve-intercept" tabindex="15" disabled style="width: 150px;"/>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-curve-fontsize" class="col-xs-4 col-sm-4 col-md-4 control-label">Font Size</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input id="input-curve-fontsize" type="text" name="input_curve_fontsize"
+                                       class="form-control input-xs" tabindex="16"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-xs-4 col-sm-4 col-md-4 control-label">Show Data Density</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <div class="radio col-sm-3">
+                                    <label>
+                                        <input type="radio" name="radio_showdensity" id="radio-showdensity1" value="false" tabindex="17" checked>
+                                        false
+                                    </label>
+                                </div>
+                                <div class="radio col-sm-9">
+                                    <label class="col-sm-6">
+                                        <input type="radio" name="radio_showdensity" id="radio-showdensity2" value="true" tabindex="18"/>
+                                        true
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--row结束-->
+
+                <div class="form-group">
+                    <button id="btn-curve-save" type="button" class="btn btn-primary col-sm-offset-11">Save</button>
+                </div>
+            </form><!--form结束-->
+        </div>
+    </div>
+</div>
+<!-- /modal-body -->
+<div class="modal-footer">
+    <button type="button" class="btn btn-success" id="btn-form-track-save">Save Change</button>
+</div>
+<!-- /modal-footer -->
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Edit Parameter</title>
+</head>
+<body>
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title">Edit Parameter</h4>
+</div>
+<!-- /modal-header -->
+<div class="modal-body">
+    <div class="col-md-4" id="dialog-template-left">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#edit-parameter-navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="edit-parameter-navbar">
+                    <ul class="nav navbar-nav nav-tabs edit-parameter-ul">
+                        <li><a id="edit-parameter-add" href="#"><span class="glyphicon glyphicon-plus"></span><span class="text-class">Add</span></a></li>
+                        <li id="edit-parameter-remove-li" class="disabled"><a id="edit-parameter-remove" href="#"><span class="glyphicon glyphicon-remove"></span><span class="text-class">Delete</span></a></li>
+                        <li id="edit-parameter-up-li" class="disabled"><a id="edit-parameter-up" href="#"><span class="glyphicon glyphicon-arrow-up"></span><span class="text-class">Up</span></a></li>
+                        <li id="edit-parameter-down-li" class="disabled"><a id="edit-parameter-down" href="#"><span class="glyphicon glyphicon-arrow-down"></span><span class="text-class">Down</span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div id="treeview-parameter" class="treeview"></div>
+    </div>
+    <div class="col-md-8">
+        <div id="edit-parameter" style="display: none">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+                    <form id="form-edit-parameter" class="form-horizontal" role="form">
+                        <h2 id="edit-track-header"></h2>
+                        <hr class="colorgraph">
+                        <div class="form-group">
+                            <label for="select-parameter-name" class="col-xs-4 col-sm-4 col-md-4 control-label">Curve Name</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <select name="select_parameter_name" id="select-parameter-name" class="form-control selectpicker show-tick"
+                                        data-size="10" tabindex="1"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-parameter-displayname" class="col-xs-4 col-sm-4 col-md-4 control-label">Display Name</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input id="input-parameter-displayname" type="text" name="input_parameter_displayname"
+                                       placeholder="Display Name" class="form-control input-xs" tabindex="2"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-parameter-unit" class="col-xs-4 col-sm-4 col-md-4 control-label">Unit</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input id="input-parameter-unit" type="text" name="input_parameter_unit"
+                                       placeholder="Unit" class="form-control input-xs" tabindex="3"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="select-parameter-formula" class="col-xs-4 col-sm-4 col-md-4 control-label">Calculator</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <select name="select_parameter_formula" id="select-parameter-formula" class="form-control selectpicker show-tick" tabindex="4">
+                                    <option value="0">no formula</option>
+                                    <option value="1">y=a*x+b</option>
+                                    <option value="2">y=a/x+b</option>
+                                    <option value="3">y=a*log(x)+b</option>
+                                    <option value="4">y=a/log(x)+b</option>
+                                </select>
+                                <div class="col-xs-12 col-sm-12 col-md-12" id="div-parameter-formula" style="display: none">
+                                    <label for="input-parameter-formulaA" class="col-xs-4 col-sm-4 col-md-4 control-label label-formula">A:</label>
+                                    <input type="text" name="input_parameter_formulaA" id="input-parameter-formulaA" class="col-xs-4 col-sm-4 col-md-4 form-control input-xs"
+                                           placeholder="A" tabindex="5" style="width:25%;"/>
+                                    <label for="input-parameter-formulaB" class="col-xs-4 col-sm-4 col-md-4 control-label label-formula">B:</label>
+                                    <input type="text" name="input_parameter_formulaB" id="input-parameter-formulaB" class="col-xs-4 col-sm-4 col-md-4 form-control input-xs"
+                                           placeholder="B" tabindex="6" style="width:25%;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-parameter-precision" class="col-xs-4 col-sm-4 col-md-4 control-label">Precision</label>
+                            <div class="col-xs-8 col-sm-8 col-md-8">
+                                <input type="text" name="input_parameter_precision" id="input-parameter-precision" class="form-control input-xs"
+                                       placeholder="Precision" tabindex="7"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button id="btn-parameter-save" type="button" class="btn btn-primary col-sm-offset-10">Save</button>
+                        </div>
+                    </form><!--form结束-->
+                </div>
+            </div><!--row结束-->
+        </div><!--edit-parameter-->
+    </div>
+</div>
+<!-- /modal-body -->
+<div class="modal-footer">
+    <button type="button" class="btn btn-success" id="btn-form-parameter-save">Save Change</button>
+</div>
+<!-- /modal-footer -->
+</body>
+</html>

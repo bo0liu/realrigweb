@@ -1,0 +1,1212 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'tsd' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'tsd', null ]
+6 verbose cache add name=undefined spec="tsd" args=["tsd",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'tsd',
+7 verbose parsed url   path: 'tsd',
+7 verbose parsed url   href: 'tsd' }
+8 silly lockFile 6d3ed5a2-tsd tsd
+9 verbose lock tsd C:\Users\liushibo\AppData\Roaming\npm-cache\6d3ed5a2-tsd.lock
+10 silly lockFile 6d3ed5a2-tsd tsd
+11 silly lockFile 6d3ed5a2-tsd tsd
+12 verbose addNamed [ 'tsd', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile ff70fa42-tsd tsd@
+15 verbose lock tsd@ C:\Users\liushibo\AppData\Roaming\npm-cache\ff70fa42-tsd.lock
+16 silly addNameRange { name: 'tsd', range: '*', hasData: false }
+17 verbose url raw tsd
+18 verbose url resolving [ 'https://registry.npmjs.org/', './tsd' ]
+19 verbose url resolved https://registry.npmjs.org/tsd
+20 info trying registry request attempt 1 at 15:23:12
+21 verbose etag "8SQVKOHVMY9UB6FU7PPU0Q0U3"
+22 http GET https://registry.npmjs.org/tsd
+23 http 304 https://registry.npmjs.org/tsd
+24 silly registry.get cb [ 304,
+24 silly registry.get   { date: 'Fri, 20 Jun 2014 07:23:11 GMT',
+24 silly registry.get     server: 'Apache',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     'last-modified': 'Fri, 20 Jun 2014 07:23:11 GMT',
+24 silly registry.get     'cache-control': 'max-age=30',
+24 silly registry.get     etag: '"8SQVKOHVMY9UB6FU7PPU0Q0U3"',
+24 silly registry.get     'x-served-by': 'cache-ty66-TYO',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1403248991.383620,VS0,VE128',
+24 silly registry.get     vary: 'Accept',
+24 silly registry.get     'content-length': '0',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 verbose etag tsd from cache
+26 silly addNameRange number 2 { name: 'tsd', range: '*', hasData: true }
+27 silly addNameRange versions [ 'tsd',
+27 silly addNameRange   [ '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.2.2',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.3.1',
+27 silly addNameRange     '0.5.2',
+27 silly addNameRange     '0.5.3',
+27 silly addNameRange     '0.5.5',
+27 silly addNameRange     '0.5.6',
+27 silly addNameRange     '0.5.7' ] ]
+28 verbose addNamed [ 'tsd', '0.5.7' ]
+29 verbose addNamed [ '0.5.7', '0.5.7' ]
+30 silly lockFile 310fc726-tsd-0-5-7 tsd@0.5.7
+31 verbose lock tsd@0.5.7 C:\Users\liushibo\AppData\Roaming\npm-cache\310fc726-tsd-0-5-7.lock
+32 silly lockFile 310fc726-tsd-0-5-7 tsd@0.5.7
+33 silly lockFile 310fc726-tsd-0-5-7 tsd@0.5.7
+34 silly lockFile ff70fa42-tsd tsd@
+35 silly lockFile ff70fa42-tsd tsd@
+36 silly resolved [ { name: 'tsd',
+36 silly resolved     version: '0.5.7',
+36 silly resolved     description: 'TypeScript Definition manager for DefinitelyTyped',
+36 silly resolved     keywords: [ 'typescript', 'definition', 'package', 'manager' ],
+36 silly resolved     homepage: 'https://github.com/DefinitelyTyped/tsd',
+36 silly resolved     repository:
+36 silly resolved      { type: 'git',
+36 silly resolved        url: 'https://github.com/DefinitelyTyped/tsd.git' },
+36 silly resolved     author:
+36 silly resolved      { name: 'Bart van der Schoor',
+36 silly resolved        url: 'https://github.com/Bartvds' },
+36 silly resolved     contributors: [ [Object] ],
+36 silly resolved     licenses: [ [Object] ],
+36 silly resolved     bugs: { url: 'https://github.com/DefinitelyTyped/tsd/issues' },
+36 silly resolved     preferGlobal: true,
+36 silly resolved     engines: { node: '>= 0.10.0 < 0.11.0' },
+36 silly resolved     main: './build/api.js',
+36 silly resolved     bin: { tsd: './build/cli.js' },
+36 silly resolved     scripts: { test: 'grunt test', prepublish: 'grunt pre_publish' },
+36 silly resolved     dependencies:
+36 silly resolved      { q: '~0.9.7',
+36 silly resolved        'q-io': '~1.9.4',
+36 silly resolved        open: '~0.0.4',
+36 silly resolved        exit: '~0.1.1',
+36 silly resolved        mkdirp: '~0.3.5',
+36 silly resolved        semver: '~2.2.1',
+36 silly resolved        tv4: '~1.0.14',
+36 silly resolved        'tv4-reporter': '~0.0.4',
+36 silly resolved        'uri-templates': '0.1.2',
+36 silly resolved        minimist: '0.0.7',
+36 silly resolved        'assertion-error': '1.0.0',
+36 silly resolved        jsesc: '~0.4.3',
+36 silly resolved        'js-yaml': '~3.0.1',
+36 silly resolved        'json-pointer': '~0.1.0',
+36 silly resolved        ministyle: '~0.1.3',
+36 silly resolved        miniwrite: '~0.1.3',
+36 silly resolved        minitable: '~0.0.2',
+36 silly resolved        'es6-shim': '0.9.1',
+36 silly resolved        request: '~2.33.0',
+36 silly resolved        'event-stream': '~3.1.0',
+36 silly resolved        bufferstream: '~0.6.2',
+36 silly resolved        'update-notifier': 'git://github.com/Bartvds/update-notifier/#fix/fork',
+36 silly resolved        'universal-analytics': '~0.3.2',
+36 silly resolved        uuid: '~1.4.1',
+36 silly resolved        'weak-map': '~1.0.3',
+36 silly resolved        'detect-indent': '~0.1.3' },
+36 silly resolved     devDependencies:
+36 silly resolved      { 'source-map-support': '~0.2.5',
+36 silly resolved        grunt: '~0.4.2',
+36 silly resolved        'grunt-cli': '~0.1.11',
+36 silly resolved        'gruntfile-gtx': '~0.2.5',
+36 silly resolved        'grunt-contrib-clean': '~0.5.0',
+36 silly resolved        'grunt-contrib-copy': '~0.4.1',
+36 silly resolved        'grunt-contrib-jshint': '~0.7.2',
+36 silly resolved        'jshint-path-reporter': '~0.1',
+36 silly resolved        typescript: '0.9.7',
+36 silly resolved        'grunt-ts': '~1.7.0',
+36 silly resolved        'grunt-tslint': '~0.4.1',
+36 silly resolved        'tslint-path-formatter': '~0.1.0',
+36 silly resolved        'grunt-tv4': '~0.4.0',
+36 silly resolved        'grunt-shell': '~0.6.1',
+36 silly resolved        'grunt-contrib-connect': '~0.5.0',
+36 silly resolved        'grunt-todos': 'git://github.com/Bartvds/grunt-todos/#master',
+36 silly resolved        'grunt-mocha-test': '~0.8.0',
+36 silly resolved        'mocha-unfunk-reporter': '~0.4.0',
+36 silly resolved        chai: 'git://github.com/Bartvds/chai/#fixes/1.8.x',
+36 silly resolved        'chai-fs': '~0.0.3',
+36 silly resolved        'chai-fuzzy': '~1.4.0',
+36 silly resolved        'chai-json-schema': '~1.0.10',
+36 silly resolved        'chai-as-promised': '~4.1.0',
+36 silly resolved        'buffer-equal': '0.0.0',
+36 silly resolved        ansidiff: '~1.0.0',
+36 silly resolved        'lodash-template': '~1.0.0',
+36 silly resolved        'grunt-webshot': '~0.2.0',
+36 silly resolved        'grunt-regex-replace': '~0.2.5',
+36 silly resolved        'package.json-schema': '~0.2.0' },
+36 silly resolved     readme: '# TSD\n\n[![Build Status](https://secure.travis-ci.org/DefinitelyTyped/tsd.png?branch=master)](http://travis-ci.org/DefinitelyTyped/tsd) [![NPM version](https://badge.fury.io/js/tsd.png)](http://badge.fury.io/js/tsd) [![Dependency Status](https://david-dm.org/DefinitelyTyped/tsd.png)](https://david-dm.org/DefinitelyTyped/tsd) [![devDependency Status](https://david-dm.org/DefinitelyTyped/tsd/dev-status.png)](https://david-dm.org/DefinitelyTyped/tsd#info=devDependencies)\n\n> TypeScript Definition manager for DefinitelyTyped\n\nTSD is a package manager to search and install [TypeScript](http://www.typescriptlang.org/) definition files directly from the community driven [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped) repository. \n\n#### Usage notes\n\n*\tIt is recommended you check-in the definitions you install into your VCS.\n*\tDon\'t forget to move your fixes back to [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped)\n\n#### Github rate-limit\n\nThe Github API has a 60-requests-per-hour [rate-limit](http://developer.github.com/v3/#rate-limiting) for non-authenticated use. You\'ll likely never hit this as TSD uses local caching and the definition files are downloaded from Github RAW urls. Optionally a scope-limited Github OAuth token can be used to boost the limit to 5000.\n\n#### Usage stats & update-notifier\n\nThe CLI tool [tracks](https://github.com/DefinitelyTyped/tsd/blob/master/src/tsd/cli/tracker.ts) some *anonymous* usage statistics about what definitions are installed though TSD in Google Analytics (using [universal-analytics](https://npmjs.org/package/universal-analytics)). There is also a [update-notifier](https://npmjs.org/package/update-notifier) service to check for TSD updates.\n\n## Install\n\nInstall global using [node](http://nodejs.org/) using [npm](https://npmjs.org/):\n\n````bash\n$ npm install tsd -g\n````\n\nFor previews and history check the [release tags](https://github.com/DefinitelyTyped/tsd/releases).\n\n## Usage as CLI command\n\nGlobal `tsd` binary:\n\n````bash\n$ tsd -h\n````\n\n[![$ tsd -h](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/help-small.png)](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/help.png)\n\nSometimes it looks like this:\n\n* [`$ tsd --help`](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/help.png)\n* [`$ tsd query async --info --history --action install`](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/async.png)\n* [`$ tsd query angular* --resolve`](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/angular.png)\n\n### Practical examples\n\nCreate a new `tsd.json`:\n\n````bash\n$ tsd init\n````\n\n#### Search\n\nMinimal query for `d3`:\n\n````bash\n$ tsd query d3\n````\n\nTip: if you are using Linux or Mac OS X, use `$ tsd query "*"`.\n\nGet some info about `jquery`:\n\n````bash\n$ tsd query jquery --info --resolve\n$ tsd query jquery -i -r\n$ tsd query jquery -ir\n````\n\nSearch for `jquery` plugins:\n\n````bash\n$ tsd query */jquery.*\n````\n\nView `mocha` history:\n\n````bash\n$ tsd query mocha --history\n$ tsd query mocha -y\n````\n\nList *everything*:\n\n````bash\n$ tsd query *\n````\n\n#### Open browser\n\nBrowse `pixi` definition on github:\n\n````bash\n$ tsd query pixi --action browse\n$ tsd query pixi -a browse\n````\n\nVisit `gruntjs` homepage:\n\n````bash\n$ tsd query gruntjs --action visit\n$ tsd query gruntjs -a visit\n````\n\n#### Install to project\n\nInstall `mocha`, `chai` and `sinon` definitions all at once:\n\n````bash\n$ tsd query mocha chai sinon --action install\n$ tsd query mocha chai sinon -a install\n````\n\nInstall `bootstrap` definitions:\n\n````bash\n$ tsd query bootstrap --action install\n$ tsd query bootstrap -a install\n````\n\nSolve the reference to `jquery`, overwrite existing files and save to the tsd.config:\n\n````bash\n$ tsd query angular --resolve --overwrite --save --action install\n$ tsd query angular -r -o -s -a install\n$ tsd query angular -rosa install\n````\nInstall and save to `test.d.ts` as `<reference/>` bundle:\n\n````bash\n$ tsd query mocha chai -r -o -s -a install -b test\n````\n\n## Query\n\nTSD uses a (globbing) path + filename selector to query the [DefinitelyTyped index](https://github.com/borisyankov/DefinitelyTyped). The results can then be modified using various filters:\n\nNote how the definition filename takes priority:\n\n````bash\n$ tsd query module\n$ tsd query project/module\n````\n\n\nFor example, consider these definitions:\n\n````\nproject/module.d.ts\nproject/module-0.1.2.d.ts\nproject/module-addon.d.ts\n\nproject-plugin/plugin.d.ts\n\nother/module.d.ts\nother/plugin.d.ts\n````\n\nNotice the pattern, and ignore the `.d.ts` extension:\n\n````html\n<project>/<module><semver>.d.ts\t\n````\n\nSelect definitions using only the module name:\n\n````bash\n$ tsd query module\n$ tsd query module-addon\n````\n\nOr use a selector derived from the path format:\n\n````bash\n$ tsd query project/module\n$ tsd query other/module\n````\n\n### Globbing filter\n\nThe selector also supports globbing, for example:\n\n````bash\n$ tsd query project/*\n$ tsd query project*\n$ tsd query module*\n$ tsd query project/module*\n$ tsd query project-*/plugin*\n$ tsd query *project*/*\n$ tsd query project/plugin*\n$ tsd query other/module\n$ tsd query */module\n$ tsd query */module-*\n$ tsd query */*plugin\n````\n\nGlobbing implements only leading and trailing (for now).\n\n### Semver filter\n\nNote: the [semver](https://github.com/isaacs/node-semver) postfix of definition files is expected to be separated by a dash and possibly a `\'v\'`\n\n````\nmodule-0.1.2\nmodule-v0.1.2\nmodule-v0.1.2-alpha\n````\n\nIf there are multiple matches with same module name they will be prioritised:\n\n1.\tThe unversioned name is considered being most recent.\n2.\tThen versions are compared as expected following these [comparison](https://github.com/isaacs/node-semver#comparison) rules.\n3.\tUse the `--version` / `-v` option to set a semver-range:\n\n````bash\n$ tsd query node -v latest\n$ tsd query node -v all\n$ tsd query node -v ">=0.8 <0.10"\n$ tsd query node -v "<0.10"\n````\n\n### Date filter\n\nUse the `--date` / `-d` option to set a date-range (find dates using `--history` / `-y`):\n\n````bash\n$ tsd query d3 --history\n$ tsd query d3 --date ">=2012-01-01"\n\n$ tsd query d3 -y\n$ tsd query d3 -d "<2012-01-01"\n````\n\n### Commit filter\n\nUse the `--commit` / `-c` option to supply sha1-hash of a commit (find a commit hash using `--history`), for convenience a shortened sha1 hash is supported. \n\n````bash\n$ tsd query youtube --history\n$ tsd query youtube --date d6ff\n\n$ tsd query youtube -y\n$ tsd query youtube -c d6ff\n````\n\nNotes:\n\n1. For now this only works with commits that actually changed the definition file you selected (eg, listed in `--history`) This will be expanded to allow selecting from any commit at a later date.\n\n## Usage as module\n \nTSD can be used as a JavaScript npm dependency: \n\n````js\nvar tsd = require(\'tsd\');\nvar api = new tsd.API(new tsd.Context(\'path/to/tsd-config.json\'));\napi.search(new tsd.Selector(\'jquery/*\')).then(function(res) {\n\t// yes\n\tutil.inspect(res);\n\n}, function(err) {\n\t// no\n});\n````\n\nFor a practical example see [grunt-tsd](https://github.com/DefinitelyTyped/grunt-tsd).\n\nTSD uses Promise/A+ by [kriskowal/q](https://github.com/kriskowal/q) and [kriskowal/q-io](https://github.com/kriskowal/q-io) packages. :point_left::+1: \n\nNote: Keep in mind this project started as a `<reference>` style TypeScript `v0.8.x` single-file compile target, which makes it harder to limit the exported API compared to `import` multi-file style. This is also why the definitions include more then just the `tsd` namespace. \n\nAPI export is somewhat experimental; take care to lock versions and test on upgrade. If you plan to use TSD as module in a tool or project then feel free to [leave a message](https://github.com/DefinitelyTyped/tsd/issues) and coordinate stuff.\n\n### API docs \n\nNot yet. \n\n## Special files\n\n### tsd.json\n\nThe `tsd.json` file is automatically created in the root of each project: it configures TSD and it tracks the definitions that are installed (using `--save`). See the [JSON Schema](https://github.com/DefinitelyTyped/tsd/tree/master/schema) for more info.\n\n### tsd.d.ts\n\nThe `tsd.d.ts` file links every definition that is installed (with `--save`) for convenient reference:\n\n````\n/// <reference path="../typings/tsd.d.ts" />\n```` \n\nBy default it is created in the typings folder but it is configurable in `tsd.json`. TSD will check the existing references and respects re-ordering.\n\n### .tsdrc\n\nThis is a optional JSON encoded file to define global settings. TSD looks for it in the  user\'s home director (eg: `%USERPROFILE%` on Windows, `$HOME` / `~` on Linux), and in the current working directory.\n\n- "**proxy**" - Use a http `proxy`\n\nAny standard http-proxy as supported by the [request](https://github.com/mikeal/request) package.\n\n````json\n{\n\t"proxy": "http://proxy.example.com:88"\n}\n````\n\n- "**token**" - Github OAuth token:\n\nThe OAuth token can be used to boost the Github API rate-limit from 60 to 5000 (non-cached) requests per hour. The is token needs just [\'read-only access to public information\'](http://developer.github.com/v3/oauth/#scopes) so no additional OAuth scopes are necessary.\n\n````json\n{\n\t"token": "0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33"\n}\n````\n\nYou can create this token on Github.com:\n\n1. Go to https://github.com/settings/tokens/new\n3. *Deselect* all scopes to create a token with just basic authentication.\n\t1. (verify you *really* deselected all scopes) \n\t5. (wonder why these presets were set??)\n2. Enter a identifying name, something like "`TSD Turbo 5000`"\n5. Create the token.\n6. Copy the hex-string to the `token` element in the `.tsdrc` file.\n6. Verify enhanced rate-limit using `$ tsd rate`\n\nChange or revoke the token at any time on https://github.com/settings/applications\n\nNote: keep in mind the `.tsdrc` file is *not* secured. Don\'t use a token with additional scope unless you know what you are doing. \n\nThe bare \'no scope\' token is *relatively* harmless as it gives \'read-only access to public information\', same as any non-autenticated access. But it does *identify* any requests done with it as being *yours*, so it is still *your* responsibility to keep the token private.\n\n## FAQ & Info\n\n### Is there a grunt task available?\n\nOf course! The official plugin is [grunt-tsd](https://github.com/DefinitelyTyped/grunt-tsd).\n\n### I hit the rate-limit: now what?\n\nIf TSD is used in a way that needs many unique API calls in a short period (like using `--history` on big selections), or shares an internet-connection with multiple users (like in an office) then the rate limit blocks the API. It blocks for 60 minutes after the *first* request of the total 60.\n\nFor these cases TSD has an option to use a Github OAuth token and raise your local rate-limit from 60 to 5000 per hour. See the `.tsdrc`-section elsewhere in the readme.\n\n### Does TSD work behind a (corporate) http proxy?\n\nAs of `v0.5.7` there are two ways to configure the location of the proxy server:\n\n1. Use a environment variable. TSD support the conventional fields: pick one of `HTTPS_PROXY`, `https_proxy`, `HTTP_PROXY` or `http_proxy`.\n1. Use a global `.tsdrc` file and set a `proxy` value (see the tsdrc-section elsewhere in the readme).\n\n### Why does the install / search command not work like in TSD 0.3.0?\n\nThe old TSD `v0.3.0` had it\'s own repository data file that mapped module names to url\'s of definition files. This had a few downsides for (maintenance being one). Since `v0.5.0` we link directly to [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped) where the directory and file names are a reasonable indicator but not 100% identical to the names as you\'d find them in npm, bower or other package managers.\n\nThe DefinitelyTyped [group](https://github.com/DefinitelyTyped/tsd/issues) is working on a meta-data source that will solve this.\n\n### Can TSD auto-install definitions for a specific package version?\n\nYes, and no (and later yes again)\n\nThere is basic support for parsing semver-postfixes from the definition file names, and you can filter on this using [semver](https://github.com/isaacs/node-semver) ranges with the `--version` option: Try it with the \'node\' definitions.\n\nIt works well but is not used much in the current DefinitelyTyped repository. The DefinitelyTyped [group](https://github.com/DefinitelyTyped/tsd/issues) is working on a meta-data source that will solve this (the [Nuget exporter](https://github.com/DefinitelyTyped/NugetAutomation) is waiting for this too).\n\n### What is the location of the cache folders?\n\nThe cache is stored in the users home directory (like `$ npm`). Use `$ tsd settings` to view the current paths. Use the `--cacheDir` to override the cache directory, or `--cacheMode` to modify caching behaviour. \n\n### I have a suggestion or contribution\n\nFeel free to leave a [ticket](https://github.com/DefinitelyTyped/tsd/issues). Questions and contributions for the definition files go [here](https://github.com/borisyankov/DefinitelyTyped/issues).\n\n## History\n\n### v0.5.x ( > 2013-08)\n\nSee the [release tags](https://github.com/DefinitelyTyped/tsd/releases) fore more details.\n\n* `0.5.x` - `current` - Full rewrite by @[Bartvds](https://github.com/Bartvds): drops the separated TSD data registry in favour of using the [Github API](http://developer.github.com/) to pull definitions directly from [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped).\n\n### v0.3.x\n\n* Original version by @[Diullei](https://github.com/Diullei).\n\nTo install `v0.3.x` (old readme [here](https://github.com/DefinitelyTyped/tsd/blob/legacy/README.md)):\n\n````bash\n$ npm install tsd@0.3.0 -g\n````\n\n## Notable modules\n\nSome essential modules used to build TSD:\n\n* [es6-shim](https://github.com/paulmillr/es6-shim) & [weak-map](https://github.com/drses/weak-map) - Map, Sets and some usefull things.\n* [grunt-ts](https://github.com/basarat/grunt-ts) - TypeScript compiler for grunt.\n* [tslint](https://github.com/palantir/tslint) + [grunt-tslint](https://github.com/palantir/grunt-tslint) - TypeScript linter (contribute some rules!)\n* [gruntfile-gtx](https://github.com/Bartvds/gruntfile-gtx) - Gruntfile powerbooster (by author).\n* [tv4](https://github.com/geraintluff/tv4) - JSON-Schema validation like a boss.\n* [q](https://github.com/kriskowal/q) and [q-io](https://github.com/kriskowal/q-io) - Promises as promised.\n* [semver](https://github.com/isaacs/node-semver) - Semver parsing and filtering\n\n## Build\n\nTSD is build with [TypeScript](http://www.typescriptlang.org/) `v0.9.7` and managed using [Grunt](http://www.gruntjs.com).\n\nTo rebuild clone or fork the repos:\n\nInstall dependencies\n\n````bash\n$ npm install\n````\n\nBuild, lint and test\n\n````bash\n$ grunt test\n````\n\nOnly rebuild (and run cli)\n\n````bash\n$ grunt build\n````\n\nEither install global or use in dev folder:\n\nRun in dev folder\n\n````bash\n$ node ./build/cli.js query d3 --dev\n````\n\nInstall to global cli\n\n````bash\n$ npm install . -g\n````\n\nTSD uses [gruntfile-gtx](https://github.com/Bartvds/gruntfile-gtx) to test separate test suites sets during development:\n\nList aliases\n\n````bash\n$ grunt -h\n````\n\nExample: run only api tests\n\n````bash\n$ grunt gtx:api\n$ grunt gtx:cli\n$ grunt gtx:tsd\n````\n\nIt is recommend you use an intelligent parsing IDE (WebStorm or VisualStudio) and a big screen (or two) on a properly powerful workstation.\n\nCode looks best with tabs rendered at 4 spaces (3 is nice too, or 6 or 8.. I don\'t really care, because [smart-tabs](http://www.emacswiki.org/SmartTabs) are awesome like that). The gruntfile uses slightly harsh [JSHint](https://github.com/jshint/jshint) and [TSLint](https://github.com/palantir/tslint) settings to enforce code style, but there is an [`.editorconfig`](http://editorconfig.org/) to elevate some of the pain.\n\n## Contribute\n\nContributions are very welcome; please discuss larger changes in a [ticket](https://github.com/DefinitelyTyped/tsd/issues) first. Fixes and simple enhancements are always much appreciated. \n\n**Note:** Contributions on the definition files go directly to [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped).\n\n## Privacy statement\n\nThe TSD CLI tool collects definition usage information, like the queries made to the repo and the definitions that get installed. The information collected amounts to about same level of detail as services like npm or github would collect (maybe even less as we don\'t track a user id). \n\nThe API does not track anything. \n\nTo store this TSD uses [Google Analytics](http://www.google.com/analytics/) in the excellent [universal-analytics](https://npmjs.org/package/universal-analytics) package. We might at some point publish some anonymised aggregate stats to the DefinitelyTyped website.\n\nThe optional [Github OAuth token](http://developer.github.com/v3/oauth/) is only used to authenticate with the Github API. The token is not stored anywhere but the local machine. It is your responsibility to keep your token safe. \n\nUsing an OAuth token with additional scope is *not advised nor supported* (even though it could make TSD work with private repositories). But it might also leak repo or content names to analytics or leave a bare http cache in your temp dir. If this bothers you please review the license and/or leave a message.\n\nChanges to the policy should be announced in release notes, and ideally ask confirmation on the first CLI use.\n\n## License\n\nCopyright (c) 2013 by [Bart van der Schoor](https://github.com/Bartvds).\n\nLicensed under the [Apache License, Version 2.0](https://raw.github.com/DefinitelyTyped/tsd/master/LICENSE.txt). \n\n* note: there is some imported MIT licensed code by myself, [Bart van der Schoor](https://github.com/Bartvds)\n\nCopyright (c) 2012 by [Diullei Gomes](https://github.com/Diullei).\n\nLicensed under the MIT License. \n\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/DefinitelyTyped/tsd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n',
+36 silly resolved     readmeFilename: 'README.md',
+36 silly resolved     _id: 'tsd@0.5.7',
+36 silly resolved     _shasum: '524bfb437b541467b5cb6111f40744a7538042d1',
+36 silly resolved     _from: 'tsd@',
+36 silly resolved     _resolved: 'https://registry.npmjs.org/tsd/-/tsd-0.5.7.tgz' } ]
+37 info install tsd@0.5.7 into E:\WebstormProjects\realrigTypeScript
+38 info installOne tsd@0.5.7
+39 info E:\WebstormProjects\realrigTypeScript\node_modules\tsd unbuild
+40 verbose tar unpack C:\Users\liushibo\AppData\Roaming\npm-cache\tsd\0.5.7\package.tgz
+41 silly lockFile 039d2c6d-alrigTypeScript-node-modules-tsd tar://E:\WebstormProjects\realrigTypeScript\node_modules\tsd
+42 verbose lock tar://E:\WebstormProjects\realrigTypeScript\node_modules\tsd C:\Users\liushibo\AppData\Roaming\npm-cache\039d2c6d-alrigTypeScript-node-modules-tsd.lock
+43 silly lockFile bbcafabb--npm-cache-tsd-0-5-7-package-tgz tar://C:\Users\liushibo\AppData\Roaming\npm-cache\tsd\0.5.7\package.tgz
+44 verbose lock tar://C:\Users\liushibo\AppData\Roaming\npm-cache\tsd\0.5.7\package.tgz C:\Users\liushibo\AppData\Roaming\npm-cache\bbcafabb--npm-cache-tsd-0-5-7-package-tgz.lock
+45 silly gunzTarPerm modes [ '755', '644' ]
+46 silly gunzTarPerm extractEntry package.json
+47 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+50 silly gunzTarPerm extractEntry build/api.js
+51 silly gunzTarPerm modified mode [ 'build/api.js', 438, 420 ]
+52 silly gunzTarPerm extractEntry build/cli.js
+53 silly gunzTarPerm modified mode [ 'build/cli.js', 438, 420 ]
+54 silly gunzTarPerm extractEntry build/.gitattributes
+55 silly gunzTarPerm modified mode [ 'build/.gitattributes', 438, 420 ]
+56 silly gunzTarPerm extractEntry build/api.d.ts
+57 silly gunzTarPerm modified mode [ 'build/api.d.ts', 438, 420 ]
+58 silly gunzTarPerm extractEntry conf/settings.json
+59 silly gunzTarPerm modified mode [ 'conf/settings.json', 438, 420 ]
+60 silly gunzTarPerm extractEntry schema/cache-v1.json
+61 silly gunzTarPerm modified mode [ 'schema/cache-v1.json', 438, 420 ]
+62 silly gunzTarPerm extractEntry schema/manage-v1.json
+63 silly gunzTarPerm modified mode [ 'schema/manage-v1.json', 438, 420 ]
+64 silly gunzTarPerm extractEntry schema/tsd-v4.json
+65 silly gunzTarPerm modified mode [ 'schema/tsd-v4.json', 438, 420 ]
+66 silly lockFile 039d2c6d-alrigTypeScript-node-modules-tsd tar://E:\WebstormProjects\realrigTypeScript\node_modules\tsd
+67 silly lockFile 039d2c6d-alrigTypeScript-node-modules-tsd tar://E:\WebstormProjects\realrigTypeScript\node_modules\tsd
+68 silly lockFile bbcafabb--npm-cache-tsd-0-5-7-package-tgz tar://C:\Users\liushibo\AppData\Roaming\npm-cache\tsd\0.5.7\package.tgz
+69 silly lockFile bbcafabb--npm-cache-tsd-0-5-7-package-tgz tar://C:\Users\liushibo\AppData\Roaming\npm-cache\tsd\0.5.7\package.tgz
+70 info preinstall tsd@0.5.7
+71 verbose readDependencies using package.json deps
+72 verbose readDependencies using package.json deps
+73 verbose cache add [ 'q@~0.9.7', null ]
+74 verbose cache add name=undefined spec="q@~0.9.7" args=["q@~0.9.7",null]
+75 verbose parsed url { protocol: null,
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: 'q@~0.9.7',
+75 verbose parsed url   path: 'q@~0.9.7',
+75 verbose parsed url   href: 'q@~0.9.7' }
+76 verbose cache add name="q" spec="~0.9.7" args=["q","~0.9.7"]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: '~0.9.7',
+77 verbose parsed url   path: '~0.9.7',
+77 verbose parsed url   href: '~0.9.7' }
+78 verbose addNamed [ 'q', '~0.9.7' ]
+79 verbose addNamed [ null, '>=0.9.7-0 <0.10.0-0' ]
+80 silly lockFile 9ea2316a-q-0-9-7 q@~0.9.7
+81 verbose lock q@~0.9.7 C:\Users\liushibo\AppData\Roaming\npm-cache\9ea2316a-q-0-9-7.lock
+82 verbose cache add [ 'q-io@~1.9.4', null ]
+83 verbose cache add name=undefined spec="q-io@~1.9.4" args=["q-io@~1.9.4",null]
+84 verbose parsed url { protocol: null,
+84 verbose parsed url   slashes: null,
+84 verbose parsed url   auth: null,
+84 verbose parsed url   host: null,
+84 verbose parsed url   port: null,
+84 verbose parsed url   hostname: null,
+84 verbose parsed url   hash: null,
+84 verbose parsed url   search: null,
+84 verbose parsed url   query: null,
+84 verbose parsed url   pathname: 'q-io@~1.9.4',
+84 verbose parsed url   path: 'q-io@~1.9.4',
+84 verbose parsed url   href: 'q-io@~1.9.4' }
+85 verbose cache add name="q-io" spec="~1.9.4" args=["q-io","~1.9.4"]
+86 verbose parsed url { protocol: null,
+86 verbose parsed url   slashes: null,
+86 verbose parsed url   auth: null,
+86 verbose parsed url   host: null,
+86 verbose parsed url   port: null,
+86 verbose parsed url   hostname: null,
+86 verbose parsed url   hash: null,
+86 verbose parsed url   search: null,
+86 verbose parsed url   query: null,
+86 verbose parsed url   pathname: '~1.9.4',
+86 verbose parsed url   path: '~1.9.4',
+86 verbose parsed url   href: '~1.9.4' }
+87 verbose addNamed [ 'q-io', '~1.9.4' ]
+88 verbose addNamed [ null, '>=1.9.4-0 <1.10.0-0' ]
+89 silly lockFile d232105b-q-io-1-9-4 q-io@~1.9.4
+90 verbose lock q-io@~1.9.4 C:\Users\liushibo\AppData\Roaming\npm-cache\d232105b-q-io-1-9-4.lock
+91 verbose cache add [ 'open@~0.0.4', null ]
+92 verbose cache add name=undefined spec="open@~0.0.4" args=["open@~0.0.4",null]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: 'open@~0.0.4',
+93 verbose parsed url   path: 'open@~0.0.4',
+93 verbose parsed url   href: 'open@~0.0.4' }
+94 verbose cache add name="open" spec="~0.0.4" args=["open","~0.0.4"]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: '~0.0.4',
+95 verbose parsed url   path: '~0.0.4',
+95 verbose parsed url   href: '~0.0.4' }
+96 verbose addNamed [ 'open', '~0.0.4' ]
+97 verbose addNamed [ null, '>=0.0.4-0 <0.1.0-0' ]
+98 silly lockFile 93cadc2e-open-0-0-4 open@~0.0.4
+99 verbose lock open@~0.0.4 C:\Users\liushibo\AppData\Roaming\npm-cache\93cadc2e-open-0-0-4.lock
+100 verbose cache add [ 'exit@~0.1.1', null ]
+101 verbose cache add name=undefined spec="exit@~0.1.1" args=["exit@~0.1.1",null]
+102 verbose parsed url { protocol: null,
+102 verbose parsed url   slashes: null,
+102 verbose parsed url   auth: null,
+102 verbose parsed url   host: null,
+102 verbose parsed url   port: null,
+102 verbose parsed url   hostname: null,
+102 verbose parsed url   hash: null,
+102 verbose parsed url   search: null,
+102 verbose parsed url   query: null,
+102 verbose parsed url   pathname: 'exit@~0.1.1',
+102 verbose parsed url   path: 'exit@~0.1.1',
+102 verbose parsed url   href: 'exit@~0.1.1' }
+103 verbose cache add name="exit" spec="~0.1.1" args=["exit","~0.1.1"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: '~0.1.1',
+104 verbose parsed url   path: '~0.1.1',
+104 verbose parsed url   href: '~0.1.1' }
+105 verbose addNamed [ 'exit', '~0.1.1' ]
+106 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+107 silly lockFile 36e7f3d8-exit-0-1-1 exit@~0.1.1
+108 verbose lock exit@~0.1.1 C:\Users\liushibo\AppData\Roaming\npm-cache\36e7f3d8-exit-0-1-1.lock
+109 verbose cache add [ 'mkdirp@~0.3.5', null ]
+110 verbose cache add name=undefined spec="mkdirp@~0.3.5" args=["mkdirp@~0.3.5",null]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: 'mkdirp@~0.3.5',
+111 verbose parsed url   path: 'mkdirp@~0.3.5',
+111 verbose parsed url   href: 'mkdirp@~0.3.5' }
+112 verbose cache add name="mkdirp" spec="~0.3.5" args=["mkdirp","~0.3.5"]
+113 verbose parsed url { protocol: null,
+113 verbose parsed url   slashes: null,
+113 verbose parsed url   auth: null,
+113 verbose parsed url   host: null,
+113 verbose parsed url   port: null,
+113 verbose parsed url   hostname: null,
+113 verbose parsed url   hash: null,
+113 verbose parsed url   search: null,
+113 verbose parsed url   query: null,
+113 verbose parsed url   pathname: '~0.3.5',
+113 verbose parsed url   path: '~0.3.5',
+113 verbose parsed url   href: '~0.3.5' }
+114 verbose addNamed [ 'mkdirp', '~0.3.5' ]
+115 verbose addNamed [ null, '>=0.3.5-0 <0.4.0-0' ]
+116 silly lockFile c3f0fe9b-mkdirp-0-3-5 mkdirp@~0.3.5
+117 verbose lock mkdirp@~0.3.5 C:\Users\liushibo\AppData\Roaming\npm-cache\c3f0fe9b-mkdirp-0-3-5.lock
+118 verbose cache add [ 'semver@~2.2.1', null ]
+119 verbose cache add name=undefined spec="semver@~2.2.1" args=["semver@~2.2.1",null]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: 'semver@~2.2.1',
+120 verbose parsed url   path: 'semver@~2.2.1',
+120 verbose parsed url   href: 'semver@~2.2.1' }
+121 verbose cache add name="semver" spec="~2.2.1" args=["semver","~2.2.1"]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: '~2.2.1',
+122 verbose parsed url   path: '~2.2.1',
+122 verbose parsed url   href: '~2.2.1' }
+123 verbose addNamed [ 'semver', '~2.2.1' ]
+124 verbose addNamed [ null, '>=2.2.1-0 <2.3.0-0' ]
+125 silly lockFile 1708eccd-semver-2-2-1 semver@~2.2.1
+126 verbose lock semver@~2.2.1 C:\Users\liushibo\AppData\Roaming\npm-cache\1708eccd-semver-2-2-1.lock
+127 verbose cache add [ 'tv4@~1.0.14', null ]
+128 verbose cache add name=undefined spec="tv4@~1.0.14" args=["tv4@~1.0.14",null]
+129 verbose parsed url { protocol: null,
+129 verbose parsed url   slashes: null,
+129 verbose parsed url   auth: null,
+129 verbose parsed url   host: null,
+129 verbose parsed url   port: null,
+129 verbose parsed url   hostname: null,
+129 verbose parsed url   hash: null,
+129 verbose parsed url   search: null,
+129 verbose parsed url   query: null,
+129 verbose parsed url   pathname: 'tv4@~1.0.14',
+129 verbose parsed url   path: 'tv4@~1.0.14',
+129 verbose parsed url   href: 'tv4@~1.0.14' }
+130 verbose cache add name="tv4" spec="~1.0.14" args=["tv4","~1.0.14"]
+131 verbose parsed url { protocol: null,
+131 verbose parsed url   slashes: null,
+131 verbose parsed url   auth: null,
+131 verbose parsed url   host: null,
+131 verbose parsed url   port: null,
+131 verbose parsed url   hostname: null,
+131 verbose parsed url   hash: null,
+131 verbose parsed url   search: null,
+131 verbose parsed url   query: null,
+131 verbose parsed url   pathname: '~1.0.14',
+131 verbose parsed url   path: '~1.0.14',
+131 verbose parsed url   href: '~1.0.14' }
+132 verbose addNamed [ 'tv4', '~1.0.14' ]
+133 verbose addNamed [ null, '>=1.0.14-0 <1.1.0-0' ]
+134 silly lockFile 37121859-tv4-1-0-14 tv4@~1.0.14
+135 verbose lock tv4@~1.0.14 C:\Users\liushibo\AppData\Roaming\npm-cache\37121859-tv4-1-0-14.lock
+136 verbose cache add [ 'tv4-reporter@~0.0.4', null ]
+137 verbose cache add name=undefined spec="tv4-reporter@~0.0.4" args=["tv4-reporter@~0.0.4",null]
+138 verbose parsed url { protocol: null,
+138 verbose parsed url   slashes: null,
+138 verbose parsed url   auth: null,
+138 verbose parsed url   host: null,
+138 verbose parsed url   port: null,
+138 verbose parsed url   hostname: null,
+138 verbose parsed url   hash: null,
+138 verbose parsed url   search: null,
+138 verbose parsed url   query: null,
+138 verbose parsed url   pathname: 'tv4-reporter@~0.0.4',
+138 verbose parsed url   path: 'tv4-reporter@~0.0.4',
+138 verbose parsed url   href: 'tv4-reporter@~0.0.4' }
+139 verbose cache add name="tv4-reporter" spec="~0.0.4" args=["tv4-reporter","~0.0.4"]
+140 verbose parsed url { protocol: null,
+140 verbose parsed url   slashes: null,
+140 verbose parsed url   auth: null,
+140 verbose parsed url   host: null,
+140 verbose parsed url   port: null,
+140 verbose parsed url   hostname: null,
+140 verbose parsed url   hash: null,
+140 verbose parsed url   search: null,
+140 verbose parsed url   query: null,
+140 verbose parsed url   pathname: '~0.0.4',
+140 verbose parsed url   path: '~0.0.4',
+140 verbose parsed url   href: '~0.0.4' }
+141 verbose addNamed [ 'tv4-reporter', '~0.0.4' ]
+142 verbose addNamed [ null, '>=0.0.4-0 <0.1.0-0' ]
+143 silly lockFile b6645691-tv4-reporter-0-0-4 tv4-reporter@~0.0.4
+144 verbose lock tv4-reporter@~0.0.4 C:\Users\liushibo\AppData\Roaming\npm-cache\b6645691-tv4-reporter-0-0-4.lock
+145 verbose cache add [ 'bufferstream@~0.6.2', null ]
+146 verbose cache add name=undefined spec="bufferstream@~0.6.2" args=["bufferstream@~0.6.2",null]
+147 verbose parsed url { protocol: null,
+147 verbose parsed url   slashes: null,
+147 verbose parsed url   auth: null,
+147 verbose parsed url   host: null,
+147 verbose parsed url   port: null,
+147 verbose parsed url   hostname: null,
+147 verbose parsed url   hash: null,
+147 verbose parsed url   search: null,
+147 verbose parsed url   query: null,
+147 verbose parsed url   pathname: 'bufferstream@~0.6.2',
+147 verbose parsed url   path: 'bufferstream@~0.6.2',
+147 verbose parsed url   href: 'bufferstream@~0.6.2' }
+148 verbose cache add name="bufferstream" spec="~0.6.2" args=["bufferstream","~0.6.2"]
+149 verbose parsed url { protocol: null,
+149 verbose parsed url   slashes: null,
+149 verbose parsed url   auth: null,
+149 verbose parsed url   host: null,
+149 verbose parsed url   port: null,
+149 verbose parsed url   hostname: null,
+149 verbose parsed url   hash: null,
+149 verbose parsed url   search: null,
+149 verbose parsed url   query: null,
+149 verbose parsed url   pathname: '~0.6.2',
+149 verbose parsed url   path: '~0.6.2',
+149 verbose parsed url   href: '~0.6.2' }
+150 verbose addNamed [ 'bufferstream', '~0.6.2' ]
+151 verbose addNamed [ null, '>=0.6.2-0 <0.7.0-0' ]
+152 silly lockFile c616727d-bufferstream-0-6-2 bufferstream@~0.6.2
+153 verbose lock bufferstream@~0.6.2 C:\Users\liushibo\AppData\Roaming\npm-cache\c616727d-bufferstream-0-6-2.lock
+154 verbose cache add [ 'uri-templates@0.1.2', null ]
+155 verbose cache add name=undefined spec="uri-templates@0.1.2" args=["uri-templates@0.1.2",null]
+156 verbose parsed url { protocol: null,
+156 verbose parsed url   slashes: null,
+156 verbose parsed url   auth: null,
+156 verbose parsed url   host: null,
+156 verbose parsed url   port: null,
+156 verbose parsed url   hostname: null,
+156 verbose parsed url   hash: null,
+156 verbose parsed url   search: null,
+156 verbose parsed url   query: null,
+156 verbose parsed url   pathname: 'uri-templates@0.1.2',
+156 verbose parsed url   path: 'uri-templates@0.1.2',
+156 verbose parsed url   href: 'uri-templates@0.1.2' }
+157 verbose cache add name="uri-templates" spec="0.1.2" args=["uri-templates","0.1.2"]
+158 verbose parsed url { protocol: null,
+158 verbose parsed url   slashes: null,
+158 verbose parsed url   auth: null,
+158 verbose parsed url   host: null,
+158 verbose parsed url   port: null,
+158 verbose parsed url   hostname: null,
+158 verbose parsed url   hash: null,
+158 verbose parsed url   search: null,
+158 verbose parsed url   query: null,
+158 verbose parsed url   pathname: '0.1.2',
+158 verbose parsed url   path: '0.1.2',
+158 verbose parsed url   href: '0.1.2' }
+159 verbose addNamed [ 'uri-templates', '0.1.2' ]
+160 verbose addNamed [ '0.1.2', '0.1.2' ]
+161 silly lockFile 8f810378-uri-templates-0-1-2 uri-templates@0.1.2
+162 verbose lock uri-templates@0.1.2 C:\Users\liushibo\AppData\Roaming\npm-cache\8f810378-uri-templates-0-1-2.lock
+163 verbose cache add [ 'update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork',
+163 verbose cache add   null ]
+164 verbose cache add name=undefined spec="update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork" args=["update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork",null]
+165 verbose parsed url { protocol: null,
+165 verbose parsed url   slashes: null,
+165 verbose parsed url   auth: null,
+165 verbose parsed url   host: null,
+165 verbose parsed url   port: null,
+165 verbose parsed url   hostname: null,
+165 verbose parsed url   hash: '#fix/fork',
+165 verbose parsed url   search: null,
+165 verbose parsed url   query: null,
+165 verbose parsed url   pathname: 'update-notifier@git://github.com/Bartvds/update-notifier/',
+165 verbose parsed url   path: 'update-notifier@git://github.com/Bartvds/update-notifier/',
+165 verbose parsed url   href: 'update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork' }
+166 verbose cache add [ 'minimist@0.0.7', null ]
+167 verbose cache add name=undefined spec="minimist@0.0.7" args=["minimist@0.0.7",null]
+168 verbose parsed url { protocol: null,
+168 verbose parsed url   slashes: null,
+168 verbose parsed url   auth: null,
+168 verbose parsed url   host: null,
+168 verbose parsed url   port: null,
+168 verbose parsed url   hostname: null,
+168 verbose parsed url   hash: null,
+168 verbose parsed url   search: null,
+168 verbose parsed url   query: null,
+168 verbose parsed url   pathname: 'minimist@0.0.7',
+168 verbose parsed url   path: 'minimist@0.0.7',
+168 verbose parsed url   href: 'minimist@0.0.7' }
+169 verbose cache add name="minimist" spec="0.0.7" args=["minimist","0.0.7"]
+170 verbose parsed url { protocol: null,
+170 verbose parsed url   slashes: null,
+170 verbose parsed url   auth: null,
+170 verbose parsed url   host: null,
+170 verbose parsed url   port: null,
+170 verbose parsed url   hostname: null,
+170 verbose parsed url   hash: null,
+170 verbose parsed url   search: null,
+170 verbose parsed url   query: null,
+170 verbose parsed url   pathname: '0.0.7',
+170 verbose parsed url   path: '0.0.7',
+170 verbose parsed url   href: '0.0.7' }
+171 verbose addNamed [ 'minimist', '0.0.7' ]
+172 verbose addNamed [ '0.0.7', '0.0.7' ]
+173 silly lockFile 02a0b287-minimist-0-0-7 minimist@0.0.7
+174 verbose lock minimist@0.0.7 C:\Users\liushibo\AppData\Roaming\npm-cache\02a0b287-minimist-0-0-7.lock
+175 verbose cache add [ 'universal-analytics@~0.3.2', null ]
+176 verbose cache add name=undefined spec="universal-analytics@~0.3.2" args=["universal-analytics@~0.3.2",null]
+177 verbose parsed url { protocol: null,
+177 verbose parsed url   slashes: null,
+177 verbose parsed url   auth: null,
+177 verbose parsed url   host: null,
+177 verbose parsed url   port: null,
+177 verbose parsed url   hostname: null,
+177 verbose parsed url   hash: null,
+177 verbose parsed url   search: null,
+177 verbose parsed url   query: null,
+177 verbose parsed url   pathname: 'universal-analytics@~0.3.2',
+177 verbose parsed url   path: 'universal-analytics@~0.3.2',
+177 verbose parsed url   href: 'universal-analytics@~0.3.2' }
+178 verbose cache add name="universal-analytics" spec="~0.3.2" args=["universal-analytics","~0.3.2"]
+179 verbose parsed url { protocol: null,
+179 verbose parsed url   slashes: null,
+179 verbose parsed url   auth: null,
+179 verbose parsed url   host: null,
+179 verbose parsed url   port: null,
+179 verbose parsed url   hostname: null,
+179 verbose parsed url   hash: null,
+179 verbose parsed url   search: null,
+179 verbose parsed url   query: null,
+179 verbose parsed url   pathname: '~0.3.2',
+179 verbose parsed url   path: '~0.3.2',
+179 verbose parsed url   href: '~0.3.2' }
+180 verbose addNamed [ 'universal-analytics', '~0.3.2' ]
+181 verbose addNamed [ null, '>=0.3.2-0 <0.4.0-0' ]
+182 silly lockFile 583e0530-universal-analytics-0-3-2 universal-analytics@~0.3.2
+183 verbose lock universal-analytics@~0.3.2 C:\Users\liushibo\AppData\Roaming\npm-cache\583e0530-universal-analytics-0-3-2.lock
+184 verbose cache add [ 'assertion-error@1.0.0', null ]
+185 verbose cache add name=undefined spec="assertion-error@1.0.0" args=["assertion-error@1.0.0",null]
+186 verbose parsed url { protocol: null,
+186 verbose parsed url   slashes: null,
+186 verbose parsed url   auth: null,
+186 verbose parsed url   host: null,
+186 verbose parsed url   port: null,
+186 verbose parsed url   hostname: null,
+186 verbose parsed url   hash: null,
+186 verbose parsed url   search: null,
+186 verbose parsed url   query: null,
+186 verbose parsed url   pathname: 'assertion-error@1.0.0',
+186 verbose parsed url   path: 'assertion-error@1.0.0',
+186 verbose parsed url   href: 'assertion-error@1.0.0' }
+187 verbose cache add name="assertion-error" spec="1.0.0" args=["assertion-error","1.0.0"]
+188 verbose parsed url { protocol: null,
+188 verbose parsed url   slashes: null,
+188 verbose parsed url   auth: null,
+188 verbose parsed url   host: null,
+188 verbose parsed url   port: null,
+188 verbose parsed url   hostname: null,
+188 verbose parsed url   hash: null,
+188 verbose parsed url   search: null,
+188 verbose parsed url   query: null,
+188 verbose parsed url   pathname: '1.0.0',
+188 verbose parsed url   path: '1.0.0',
+188 verbose parsed url   href: '1.0.0' }
+189 verbose addNamed [ 'assertion-error', '1.0.0' ]
+190 verbose addNamed [ '1.0.0', '1.0.0' ]
+191 silly lockFile f5d03964-assertion-error-1-0-0 assertion-error@1.0.0
+192 verbose lock assertion-error@1.0.0 C:\Users\liushibo\AppData\Roaming\npm-cache\f5d03964-assertion-error-1-0-0.lock
+193 verbose cache add [ 'uuid@~1.4.1', null ]
+194 verbose cache add name=undefined spec="uuid@~1.4.1" args=["uuid@~1.4.1",null]
+195 verbose parsed url { protocol: null,
+195 verbose parsed url   slashes: null,
+195 verbose parsed url   auth: null,
+195 verbose parsed url   host: null,
+195 verbose parsed url   port: null,
+195 verbose parsed url   hostname: null,
+195 verbose parsed url   hash: null,
+195 verbose parsed url   search: null,
+195 verbose parsed url   query: null,
+195 verbose parsed url   pathname: 'uuid@~1.4.1',
+195 verbose parsed url   path: 'uuid@~1.4.1',
+195 verbose parsed url   href: 'uuid@~1.4.1' }
+196 verbose cache add name="uuid" spec="~1.4.1" args=["uuid","~1.4.1"]
+197 verbose parsed url { protocol: null,
+197 verbose parsed url   slashes: null,
+197 verbose parsed url   auth: null,
+197 verbose parsed url   host: null,
+197 verbose parsed url   port: null,
+197 verbose parsed url   hostname: null,
+197 verbose parsed url   hash: null,
+197 verbose parsed url   search: null,
+197 verbose parsed url   query: null,
+197 verbose parsed url   pathname: '~1.4.1',
+197 verbose parsed url   path: '~1.4.1',
+197 verbose parsed url   href: '~1.4.1' }
+198 verbose addNamed [ 'uuid', '~1.4.1' ]
+199 verbose addNamed [ null, '>=1.4.1-0 <1.5.0-0' ]
+200 silly lockFile bc91a07e-uuid-1-4-1 uuid@~1.4.1
+201 verbose lock uuid@~1.4.1 C:\Users\liushibo\AppData\Roaming\npm-cache\bc91a07e-uuid-1-4-1.lock
+202 verbose cache add [ 'jsesc@~0.4.3', null ]
+203 verbose cache add name=undefined spec="jsesc@~0.4.3" args=["jsesc@~0.4.3",null]
+204 verbose parsed url { protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: 'jsesc@~0.4.3',
+204 verbose parsed url   path: 'jsesc@~0.4.3',
+204 verbose parsed url   href: 'jsesc@~0.4.3' }
+205 verbose cache add name="jsesc" spec="~0.4.3" args=["jsesc","~0.4.3"]
+206 verbose parsed url { protocol: null,
+206 verbose parsed url   slashes: null,
+206 verbose parsed url   auth: null,
+206 verbose parsed url   host: null,
+206 verbose parsed url   port: null,
+206 verbose parsed url   hostname: null,
+206 verbose parsed url   hash: null,
+206 verbose parsed url   search: null,
+206 verbose parsed url   query: null,
+206 verbose parsed url   pathname: '~0.4.3',
+206 verbose parsed url   path: '~0.4.3',
+206 verbose parsed url   href: '~0.4.3' }
+207 verbose addNamed [ 'jsesc', '~0.4.3' ]
+208 verbose addNamed [ null, '>=0.4.3-0 <0.5.0-0' ]
+209 silly lockFile 6eea1e8d-jsesc-0-4-3 jsesc@~0.4.3
+210 verbose lock jsesc@~0.4.3 C:\Users\liushibo\AppData\Roaming\npm-cache\6eea1e8d-jsesc-0-4-3.lock
+211 verbose cache add [ 'weak-map@~1.0.3', null ]
+212 verbose cache add name=undefined spec="weak-map@~1.0.3" args=["weak-map@~1.0.3",null]
+213 verbose parsed url { protocol: null,
+213 verbose parsed url   slashes: null,
+213 verbose parsed url   auth: null,
+213 verbose parsed url   host: null,
+213 verbose parsed url   port: null,
+213 verbose parsed url   hostname: null,
+213 verbose parsed url   hash: null,
+213 verbose parsed url   search: null,
+213 verbose parsed url   query: null,
+213 verbose parsed url   pathname: 'weak-map@~1.0.3',
+213 verbose parsed url   path: 'weak-map@~1.0.3',
+213 verbose parsed url   href: 'weak-map@~1.0.3' }
+214 verbose cache add name="weak-map" spec="~1.0.3" args=["weak-map","~1.0.3"]
+215 verbose parsed url { protocol: null,
+215 verbose parsed url   slashes: null,
+215 verbose parsed url   auth: null,
+215 verbose parsed url   host: null,
+215 verbose parsed url   port: null,
+215 verbose parsed url   hostname: null,
+215 verbose parsed url   hash: null,
+215 verbose parsed url   search: null,
+215 verbose parsed url   query: null,
+215 verbose parsed url   pathname: '~1.0.3',
+215 verbose parsed url   path: '~1.0.3',
+215 verbose parsed url   href: '~1.0.3' }
+216 verbose addNamed [ 'weak-map', '~1.0.3' ]
+217 verbose addNamed [ null, '>=1.0.3-0 <1.1.0-0' ]
+218 silly lockFile cfb82fcc-weak-map-1-0-3 weak-map@~1.0.3
+219 verbose lock weak-map@~1.0.3 C:\Users\liushibo\AppData\Roaming\npm-cache\cfb82fcc-weak-map-1-0-3.lock
+220 verbose cache add [ 'js-yaml@~3.0.1', null ]
+221 verbose cache add name=undefined spec="js-yaml@~3.0.1" args=["js-yaml@~3.0.1",null]
+222 verbose parsed url { protocol: null,
+222 verbose parsed url   slashes: null,
+222 verbose parsed url   auth: null,
+222 verbose parsed url   host: null,
+222 verbose parsed url   port: null,
+222 verbose parsed url   hostname: null,
+222 verbose parsed url   hash: null,
+222 verbose parsed url   search: null,
+222 verbose parsed url   query: null,
+222 verbose parsed url   pathname: 'js-yaml@~3.0.1',
+222 verbose parsed url   path: 'js-yaml@~3.0.1',
+222 verbose parsed url   href: 'js-yaml@~3.0.1' }
+223 verbose cache add name="js-yaml" spec="~3.0.1" args=["js-yaml","~3.0.1"]
+224 verbose parsed url { protocol: null,
+224 verbose parsed url   slashes: null,
+224 verbose parsed url   auth: null,
+224 verbose parsed url   host: null,
+224 verbose parsed url   port: null,
+224 verbose parsed url   hostname: null,
+224 verbose parsed url   hash: null,
+224 verbose parsed url   search: null,
+224 verbose parsed url   query: null,
+224 verbose parsed url   pathname: '~3.0.1',
+224 verbose parsed url   path: '~3.0.1',
+224 verbose parsed url   href: '~3.0.1' }
+225 verbose addNamed [ 'js-yaml', '~3.0.1' ]
+226 verbose addNamed [ null, '>=3.0.1-0 <3.1.0-0' ]
+227 silly lockFile 48adea8c-js-yaml-3-0-1 js-yaml@~3.0.1
+228 verbose lock js-yaml@~3.0.1 C:\Users\liushibo\AppData\Roaming\npm-cache\48adea8c-js-yaml-3-0-1.lock
+229 verbose cache add [ 'detect-indent@~0.1.3', null ]
+230 verbose cache add name=undefined spec="detect-indent@~0.1.3" args=["detect-indent@~0.1.3",null]
+231 verbose parsed url { protocol: null,
+231 verbose parsed url   slashes: null,
+231 verbose parsed url   auth: null,
+231 verbose parsed url   host: null,
+231 verbose parsed url   port: null,
+231 verbose parsed url   hostname: null,
+231 verbose parsed url   hash: null,
+231 verbose parsed url   search: null,
+231 verbose parsed url   query: null,
+231 verbose parsed url   pathname: 'detect-indent@~0.1.3',
+231 verbose parsed url   path: 'detect-indent@~0.1.3',
+231 verbose parsed url   href: 'detect-indent@~0.1.3' }
+232 verbose cache add name="detect-indent" spec="~0.1.3" args=["detect-indent","~0.1.3"]
+233 verbose parsed url { protocol: null,
+233 verbose parsed url   slashes: null,
+233 verbose parsed url   auth: null,
+233 verbose parsed url   host: null,
+233 verbose parsed url   port: null,
+233 verbose parsed url   hostname: null,
+233 verbose parsed url   hash: null,
+233 verbose parsed url   search: null,
+233 verbose parsed url   query: null,
+233 verbose parsed url   pathname: '~0.1.3',
+233 verbose parsed url   path: '~0.1.3',
+233 verbose parsed url   href: '~0.1.3' }
+234 verbose addNamed [ 'detect-indent', '~0.1.3' ]
+235 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+236 silly lockFile 41bc8309-detect-indent-0-1-3 detect-indent@~0.1.3
+237 verbose lock detect-indent@~0.1.3 C:\Users\liushibo\AppData\Roaming\npm-cache\41bc8309-detect-indent-0-1-3.lock
+238 verbose cache add [ 'json-pointer@~0.1.0', null ]
+239 verbose cache add name=undefined spec="json-pointer@~0.1.0" args=["json-pointer@~0.1.0",null]
+240 verbose parsed url { protocol: null,
+240 verbose parsed url   slashes: null,
+240 verbose parsed url   auth: null,
+240 verbose parsed url   host: null,
+240 verbose parsed url   port: null,
+240 verbose parsed url   hostname: null,
+240 verbose parsed url   hash: null,
+240 verbose parsed url   search: null,
+240 verbose parsed url   query: null,
+240 verbose parsed url   pathname: 'json-pointer@~0.1.0',
+240 verbose parsed url   path: 'json-pointer@~0.1.0',
+240 verbose parsed url   href: 'json-pointer@~0.1.0' }
+241 verbose cache add name="json-pointer" spec="~0.1.0" args=["json-pointer","~0.1.0"]
+242 verbose parsed url { protocol: null,
+242 verbose parsed url   slashes: null,
+242 verbose parsed url   auth: null,
+242 verbose parsed url   host: null,
+242 verbose parsed url   port: null,
+242 verbose parsed url   hostname: null,
+242 verbose parsed url   hash: null,
+242 verbose parsed url   search: null,
+242 verbose parsed url   query: null,
+242 verbose parsed url   pathname: '~0.1.0',
+242 verbose parsed url   path: '~0.1.0',
+242 verbose parsed url   href: '~0.1.0' }
+243 verbose addNamed [ 'json-pointer', '~0.1.0' ]
+244 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+245 silly lockFile 1630aaf2-json-pointer-0-1-0 json-pointer@~0.1.0
+246 verbose lock json-pointer@~0.1.0 C:\Users\liushibo\AppData\Roaming\npm-cache\1630aaf2-json-pointer-0-1-0.lock
+247 verbose cache add [ 'ministyle@~0.1.3', null ]
+248 verbose cache add name=undefined spec="ministyle@~0.1.3" args=["ministyle@~0.1.3",null]
+249 verbose parsed url { protocol: null,
+249 verbose parsed url   slashes: null,
+249 verbose parsed url   auth: null,
+249 verbose parsed url   host: null,
+249 verbose parsed url   port: null,
+249 verbose parsed url   hostname: null,
+249 verbose parsed url   hash: null,
+249 verbose parsed url   search: null,
+249 verbose parsed url   query: null,
+249 verbose parsed url   pathname: 'ministyle@~0.1.3',
+249 verbose parsed url   path: 'ministyle@~0.1.3',
+249 verbose parsed url   href: 'ministyle@~0.1.3' }
+250 verbose cache add name="ministyle" spec="~0.1.3" args=["ministyle","~0.1.3"]
+251 verbose parsed url { protocol: null,
+251 verbose parsed url   slashes: null,
+251 verbose parsed url   auth: null,
+251 verbose parsed url   host: null,
+251 verbose parsed url   port: null,
+251 verbose parsed url   hostname: null,
+251 verbose parsed url   hash: null,
+251 verbose parsed url   search: null,
+251 verbose parsed url   query: null,
+251 verbose parsed url   pathname: '~0.1.3',
+251 verbose parsed url   path: '~0.1.3',
+251 verbose parsed url   href: '~0.1.3' }
+252 verbose addNamed [ 'ministyle', '~0.1.3' ]
+253 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+254 silly lockFile 33b2259b-ministyle-0-1-3 ministyle@~0.1.3
+255 verbose lock ministyle@~0.1.3 C:\Users\liushibo\AppData\Roaming\npm-cache\33b2259b-ministyle-0-1-3.lock
+256 verbose cache add [ 'miniwrite@~0.1.3', null ]
+257 verbose cache add name=undefined spec="miniwrite@~0.1.3" args=["miniwrite@~0.1.3",null]
+258 verbose parsed url { protocol: null,
+258 verbose parsed url   slashes: null,
+258 verbose parsed url   auth: null,
+258 verbose parsed url   host: null,
+258 verbose parsed url   port: null,
+258 verbose parsed url   hostname: null,
+258 verbose parsed url   hash: null,
+258 verbose parsed url   search: null,
+258 verbose parsed url   query: null,
+258 verbose parsed url   pathname: 'miniwrite@~0.1.3',
+258 verbose parsed url   path: 'miniwrite@~0.1.3',
+258 verbose parsed url   href: 'miniwrite@~0.1.3' }
+259 verbose cache add name="miniwrite" spec="~0.1.3" args=["miniwrite","~0.1.3"]
+260 verbose parsed url { protocol: null,
+260 verbose parsed url   slashes: null,
+260 verbose parsed url   auth: null,
+260 verbose parsed url   host: null,
+260 verbose parsed url   port: null,
+260 verbose parsed url   hostname: null,
+260 verbose parsed url   hash: null,
+260 verbose parsed url   search: null,
+260 verbose parsed url   query: null,
+260 verbose parsed url   pathname: '~0.1.3',
+260 verbose parsed url   path: '~0.1.3',
+260 verbose parsed url   href: '~0.1.3' }
+261 verbose addNamed [ 'miniwrite', '~0.1.3' ]
+262 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+263 silly lockFile 0cbc2735-miniwrite-0-1-3 miniwrite@~0.1.3
+264 verbose lock miniwrite@~0.1.3 C:\Users\liushibo\AppData\Roaming\npm-cache\0cbc2735-miniwrite-0-1-3.lock
+265 verbose cache add [ 'minitable@~0.0.2', null ]
+266 verbose cache add name=undefined spec="minitable@~0.0.2" args=["minitable@~0.0.2",null]
+267 verbose parsed url { protocol: null,
+267 verbose parsed url   slashes: null,
+267 verbose parsed url   auth: null,
+267 verbose parsed url   host: null,
+267 verbose parsed url   port: null,
+267 verbose parsed url   hostname: null,
+267 verbose parsed url   hash: null,
+267 verbose parsed url   search: null,
+267 verbose parsed url   query: null,
+267 verbose parsed url   pathname: 'minitable@~0.0.2',
+267 verbose parsed url   path: 'minitable@~0.0.2',
+267 verbose parsed url   href: 'minitable@~0.0.2' }
+268 verbose cache add name="minitable" spec="~0.0.2" args=["minitable","~0.0.2"]
+269 verbose parsed url { protocol: null,
+269 verbose parsed url   slashes: null,
+269 verbose parsed url   auth: null,
+269 verbose parsed url   host: null,
+269 verbose parsed url   port: null,
+269 verbose parsed url   hostname: null,
+269 verbose parsed url   hash: null,
+269 verbose parsed url   search: null,
+269 verbose parsed url   query: null,
+269 verbose parsed url   pathname: '~0.0.2',
+269 verbose parsed url   path: '~0.0.2',
+269 verbose parsed url   href: '~0.0.2' }
+270 verbose addNamed [ 'minitable', '~0.0.2' ]
+271 verbose addNamed [ null, '>=0.0.2-0 <0.1.0-0' ]
+272 silly lockFile 67c02929-minitable-0-0-2 minitable@~0.0.2
+273 verbose lock minitable@~0.0.2 C:\Users\liushibo\AppData\Roaming\npm-cache\67c02929-minitable-0-0-2.lock
+274 verbose cache add [ 'es6-shim@0.9.1', null ]
+275 verbose cache add name=undefined spec="es6-shim@0.9.1" args=["es6-shim@0.9.1",null]
+276 verbose parsed url { protocol: null,
+276 verbose parsed url   slashes: null,
+276 verbose parsed url   auth: null,
+276 verbose parsed url   host: null,
+276 verbose parsed url   port: null,
+276 verbose parsed url   hostname: null,
+276 verbose parsed url   hash: null,
+276 verbose parsed url   search: null,
+276 verbose parsed url   query: null,
+276 verbose parsed url   pathname: 'es6-shim@0.9.1',
+276 verbose parsed url   path: 'es6-shim@0.9.1',
+276 verbose parsed url   href: 'es6-shim@0.9.1' }
+277 verbose cache add name="es6-shim" spec="0.9.1" args=["es6-shim","0.9.1"]
+278 verbose parsed url { protocol: null,
+278 verbose parsed url   slashes: null,
+278 verbose parsed url   auth: null,
+278 verbose parsed url   host: null,
+278 verbose parsed url   port: null,
+278 verbose parsed url   hostname: null,
+278 verbose parsed url   hash: null,
+278 verbose parsed url   search: null,
+278 verbose parsed url   query: null,
+278 verbose parsed url   pathname: '0.9.1',
+278 verbose parsed url   path: '0.9.1',
+278 verbose parsed url   href: '0.9.1' }
+279 verbose addNamed [ 'es6-shim', '0.9.1' ]
+280 verbose addNamed [ '0.9.1', '0.9.1' ]
+281 silly lockFile a136f937-es6-shim-0-9-1 es6-shim@0.9.1
+282 verbose lock es6-shim@0.9.1 C:\Users\liushibo\AppData\Roaming\npm-cache\a136f937-es6-shim-0-9-1.lock
+283 verbose cache add [ 'request@~2.33.0', null ]
+284 verbose cache add name=undefined spec="request@~2.33.0" args=["request@~2.33.0",null]
+285 verbose parsed url { protocol: null,
+285 verbose parsed url   slashes: null,
+285 verbose parsed url   auth: null,
+285 verbose parsed url   host: null,
+285 verbose parsed url   port: null,
+285 verbose parsed url   hostname: null,
+285 verbose parsed url   hash: null,
+285 verbose parsed url   search: null,
+285 verbose parsed url   query: null,
+285 verbose parsed url   pathname: 'request@~2.33.0',
+285 verbose parsed url   path: 'request@~2.33.0',
+285 verbose parsed url   href: 'request@~2.33.0' }
+286 verbose cache add name="request" spec="~2.33.0" args=["request","~2.33.0"]
+287 verbose parsed url { protocol: null,
+287 verbose parsed url   slashes: null,
+287 verbose parsed url   auth: null,
+287 verbose parsed url   host: null,
+287 verbose parsed url   port: null,
+287 verbose parsed url   hostname: null,
+287 verbose parsed url   hash: null,
+287 verbose parsed url   search: null,
+287 verbose parsed url   query: null,
+287 verbose parsed url   pathname: '~2.33.0',
+287 verbose parsed url   path: '~2.33.0',
+287 verbose parsed url   href: '~2.33.0' }
+288 verbose addNamed [ 'request', '~2.33.0' ]
+289 verbose addNamed [ null, '>=2.33.0-0 <2.34.0-0' ]
+290 silly lockFile bc831a1d-request-2-33-0 request@~2.33.0
+291 verbose lock request@~2.33.0 C:\Users\liushibo\AppData\Roaming\npm-cache\bc831a1d-request-2-33-0.lock
+292 verbose cache add [ 'event-stream@~3.1.0', null ]
+293 verbose cache add name=undefined spec="event-stream@~3.1.0" args=["event-stream@~3.1.0",null]
+294 verbose parsed url { protocol: null,
+294 verbose parsed url   slashes: null,
+294 verbose parsed url   auth: null,
+294 verbose parsed url   host: null,
+294 verbose parsed url   port: null,
+294 verbose parsed url   hostname: null,
+294 verbose parsed url   hash: null,
+294 verbose parsed url   search: null,
+294 verbose parsed url   query: null,
+294 verbose parsed url   pathname: 'event-stream@~3.1.0',
+294 verbose parsed url   path: 'event-stream@~3.1.0',
+294 verbose parsed url   href: 'event-stream@~3.1.0' }
+295 verbose cache add name="event-stream" spec="~3.1.0" args=["event-stream","~3.1.0"]
+296 verbose parsed url { protocol: null,
+296 verbose parsed url   slashes: null,
+296 verbose parsed url   auth: null,
+296 verbose parsed url   host: null,
+296 verbose parsed url   port: null,
+296 verbose parsed url   hostname: null,
+296 verbose parsed url   hash: null,
+296 verbose parsed url   search: null,
+296 verbose parsed url   query: null,
+296 verbose parsed url   pathname: '~3.1.0',
+296 verbose parsed url   path: '~3.1.0',
+296 verbose parsed url   href: '~3.1.0' }
+297 verbose addNamed [ 'event-stream', '~3.1.0' ]
+298 verbose addNamed [ null, '>=3.1.0-0 <3.2.0-0' ]
+299 silly lockFile 98d1a8ea-event-stream-3-1-0 event-stream@~3.1.0
+300 verbose lock event-stream@~3.1.0 C:\Users\liushibo\AppData\Roaming\npm-cache\98d1a8ea-event-stream-3-1-0.lock
+301 silly addNameRange { name: 'q', range: '>=0.9.7-0 <0.10.0-0', hasData: false }
+302 silly addNameRange { name: 'q-io', range: '>=1.9.4-0 <1.10.0-0', hasData: false }
+303 verbose cache add name="update-notifier" spec="git://github.com/Bartvds/update-notifier/#fix/fork" args=["update-notifier","git://github.com/Bartvds/update-notifier/#fix/fork"]
+304 verbose parsed url { protocol: 'git:',
+304 verbose parsed url   slashes: true,
+304 verbose parsed url   auth: null,
+304 verbose parsed url   host: 'github.com',
+304 verbose parsed url   port: null,
+304 verbose parsed url   hostname: 'github.com',
+304 verbose parsed url   hash: '#fix/fork',
+304 verbose parsed url   search: null,
+304 verbose parsed url   query: null,
+304 verbose parsed url   pathname: '/Bartvds/update-notifier/',
+304 verbose parsed url   path: '/Bartvds/update-notifier/',
+304 verbose parsed url   href: 'git://github.com/Bartvds/update-notifier/#fix/fork' }
+305 silly lockFile a420e038-thub-com-Bartvds-update-notifier git://github.com/Bartvds/update-notifier/
+306 verbose lock git://github.com/Bartvds/update-notifier/ C:\Users\liushibo\AppData\Roaming\npm-cache\a420e038-thub-com-Bartvds-update-notifier.lock
+307 silly addNameRange { name: 'open', range: '>=0.0.4-0 <0.1.0-0', hasData: false }
+308 silly addNameRange { name: 'mkdirp', range: '>=0.3.5-0 <0.4.0-0', hasData: false }
+309 silly addNameRange { name: 'semver', range: '>=2.2.1-0 <2.3.0-0', hasData: false }
+310 silly addNameRange { name: 'tv4-reporter',
+310 silly addNameRange   range: '>=0.0.4-0 <0.1.0-0',
+310 silly addNameRange   hasData: false }
+311 silly addNameRange { name: 'exit', range: '>=0.1.1-0 <0.2.0-0', hasData: false }
+312 silly addNameRange { name: 'tv4', range: '>=1.0.14-0 <1.1.0-0', hasData: false }
+313 silly addNameRange { name: 'bufferstream',
+313 silly addNameRange   range: '>=0.6.2-0 <0.7.0-0',
+313 silly addNameRange   hasData: false }
+314 silly addNameRange { name: 'universal-analytics',
+314 silly addNameRange   range: '>=0.3.2-0 <0.4.0-0',
+314 silly addNameRange   hasData: false }
+315 silly addNameRange { name: 'uuid', range: '>=1.4.1-0 <1.5.0-0', hasData: false }
+316 silly addNameRange { name: 'jsesc', range: '>=0.4.3-0 <0.5.0-0', hasData: false }
+317 silly addNameRange { name: 'miniwrite',
+317 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+317 silly addNameRange   hasData: false }
+318 silly addNameRange { name: 'ministyle',
+318 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+318 silly addNameRange   hasData: false }
+319 silly addNameRange { name: 'js-yaml', range: '>=3.0.1-0 <3.1.0-0', hasData: false }
+320 silly addNameRange { name: 'weak-map', range: '>=1.0.3-0 <1.1.0-0', hasData: false }
+321 silly addNameRange { name: 'json-pointer',
+321 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+321 silly addNameRange   hasData: false }
+322 silly addNameRange { name: 'detect-indent',
+322 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+322 silly addNameRange   hasData: false }
+323 silly addNameRange { name: 'request',
+323 silly addNameRange   range: '>=2.33.0-0 <2.34.0-0',
+323 silly addNameRange   hasData: false }
+324 silly addNameRange { name: 'minitable',
+324 silly addNameRange   range: '>=0.0.2-0 <0.1.0-0',
+324 silly addNameRange   hasData: false }
+325 silly addNameRange { name: 'event-stream',
+325 silly addNameRange   range: '>=3.1.0-0 <3.2.0-0',
+325 silly addNameRange   hasData: false }
+326 verbose addRemoteGit [ 'git://github.com/Bartvds/update-notifier/', 'fix/fork' ]
+327 verbose url raw q-io
+328 verbose url resolving [ 'https://registry.npmjs.org/', './q-io' ]
+329 verbose url resolved https://registry.npmjs.org/q-io
+330 info trying registry request attempt 1 at 15:23:13
+331 verbose etag "7T6IT8GPH0XGPHTBFHNJS9MW3"
+332 http GET https://registry.npmjs.org/q-io
+333 verbose url raw q
+334 verbose url resolving [ 'https://registry.npmjs.org/', './q' ]
+335 verbose url resolved https://registry.npmjs.org/q
+336 info trying registry request attempt 1 at 15:23:13
+337 verbose etag "3NYZT1I6AI8QRJ5AL1PJ6DLHO"
+338 http GET https://registry.npmjs.org/q
+339 verbose url raw open
+340 verbose url resolving [ 'https://registry.npmjs.org/', './open' ]
+341 verbose url resolved https://registry.npmjs.org/open
+342 info trying registry request attempt 1 at 15:23:13
+343 verbose etag "92J2QC9RIL0L6QRTT2NNZT99S"
+344 http GET https://registry.npmjs.org/open
+345 verbose url raw semver
+346 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+347 verbose url resolved https://registry.npmjs.org/semver
+348 info trying registry request attempt 1 at 15:23:13
+349 verbose etag "ETTX428O4YWFNKB5IW0K4EVA6"
+350 http GET https://registry.npmjs.org/semver
+351 verbose url raw tv4-reporter
+352 verbose url resolving [ 'https://registry.npmjs.org/', './tv4-reporter' ]
+353 verbose url resolved https://registry.npmjs.org/tv4-reporter
+354 info trying registry request attempt 1 at 15:23:13
+355 verbose etag "D61WAZLC5AV7NKSMT40K4STUJ"
+356 http GET https://registry.npmjs.org/tv4-reporter
+357 verbose url raw exit
+358 verbose url resolving [ 'https://registry.npmjs.org/', './exit' ]
+359 verbose url resolved https://registry.npmjs.org/exit
+360 info trying registry request attempt 1 at 15:23:13
+361 verbose etag "7PMTUAYK2EXLIVTEBAUSVFFB9"
+362 http GET https://registry.npmjs.org/exit
+363 verbose url raw tv4
+364 verbose url resolving [ 'https://registry.npmjs.org/', './tv4' ]
+365 verbose url resolved https://registry.npmjs.org/tv4
+366 info trying registry request attempt 1 at 15:23:13
+367 verbose etag "8S1WMSOGYJMW5KMTW16IEO55V"
+368 http GET https://registry.npmjs.org/tv4
+369 verbose url raw uri-templates
+370 verbose url resolving [ 'https://registry.npmjs.org/', './uri-templates' ]
+371 verbose url resolved https://registry.npmjs.org/uri-templates
+372 info trying registry request attempt 1 at 15:23:13
+373 verbose etag "7UXWN4MEJ4GM0QU8P7YWU2H8G"
+374 http GET https://registry.npmjs.org/uri-templates
+375 verbose url raw minimist
+376 verbose url resolving [ 'https://registry.npmjs.org/', './minimist' ]
+377 verbose url resolved https://registry.npmjs.org/minimist
+378 info trying registry request attempt 1 at 15:23:13
+379 verbose etag "B5G0CCDY1Y3SRL3PWSZ16K39O"
+380 http GET https://registry.npmjs.org/minimist
+381 verbose url raw bufferstream
+382 verbose url resolving [ 'https://registry.npmjs.org/', './bufferstream' ]
+383 verbose url resolved https://registry.npmjs.org/bufferstream
+384 info trying registry request attempt 1 at 15:23:13
+385 verbose etag "253SX4OIK5Q7TUDKF28JNLNSL"
+386 http GET https://registry.npmjs.org/bufferstream
+387 verbose url raw universal-analytics
+388 verbose url resolving [ 'https://registry.npmjs.org/', './universal-analytics' ]
+389 verbose url resolved https://registry.npmjs.org/universal-analytics
+390 info trying registry request attempt 1 at 15:23:13
+391 verbose etag "9WSVOQXMVMQLCN401QWQ6O019"
+392 http GET https://registry.npmjs.org/universal-analytics
+393 verbose url raw assertion-error
+394 verbose url resolving [ 'https://registry.npmjs.org/', './assertion-error' ]
+395 verbose url resolved https://registry.npmjs.org/assertion-error
+396 info trying registry request attempt 1 at 15:23:13
+397 verbose etag "A4UQHLU6IS3HQYUJ8BLYI3P9Y"
+398 http GET https://registry.npmjs.org/assertion-error
+399 verbose url raw uuid
+400 verbose url resolving [ 'https://registry.npmjs.org/', './uuid' ]
+401 verbose url resolved https://registry.npmjs.org/uuid
+402 info trying registry request attempt 1 at 15:23:13
+403 verbose etag "1TVG2S4RMJUU18OQBHIVXZYJN"
+404 http GET https://registry.npmjs.org/uuid
+405 verbose url raw mkdirp
+406 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+407 verbose url resolved https://registry.npmjs.org/mkdirp
+408 info trying registry request attempt 1 at 15:23:13
+409 verbose etag "7TU6L0P1XGKTY2X7NVRVU1IMP"
+410 http GET https://registry.npmjs.org/mkdirp
+411 verbose url raw miniwrite
+412 verbose url resolving [ 'https://registry.npmjs.org/', './miniwrite' ]
+413 verbose url resolved https://registry.npmjs.org/miniwrite
+414 info trying registry request attempt 1 at 15:23:13
+415 verbose etag "64TNFQ0F3BY79R81DVL35AZ8Q"
+416 http GET https://registry.npmjs.org/miniwrite
+417 verbose url raw ministyle
+418 verbose url resolving [ 'https://registry.npmjs.org/', './ministyle' ]
+419 verbose url resolved https://registry.npmjs.org/ministyle
+420 info trying registry request attempt 1 at 15:23:13
+421 verbose etag "ACAASLOMRCBVH4NLWCXNSLQPW"
+422 http GET https://registry.npmjs.org/ministyle
+423 verbose url raw jsesc
+424 verbose url resolving [ 'https://registry.npmjs.org/', './jsesc' ]
+425 verbose url resolved https://registry.npmjs.org/jsesc
+426 info trying registry request attempt 1 at 15:23:13
+427 verbose etag "21C8JO8ZVVDESOGW9FKN6O9JG"
+428 http GET https://registry.npmjs.org/jsesc
+429 verbose url raw js-yaml
+430 verbose url resolving [ 'https://registry.npmjs.org/', './js-yaml' ]
+431 verbose url resolved https://registry.npmjs.org/js-yaml
+432 info trying registry request attempt 1 at 15:23:13
+433 verbose etag "3WYNQ9AS8ZV96KJG62Y87DFW1"
+434 http GET https://registry.npmjs.org/js-yaml
+435 verbose url raw weak-map
+436 verbose url resolving [ 'https://registry.npmjs.org/', './weak-map' ]
+437 verbose url resolved https://registry.npmjs.org/weak-map
+438 info trying registry request attempt 1 at 15:23:13
+439 verbose etag "AMHYVMGDPEI7FWKC88T7XYHMO"
+440 http GET https://registry.npmjs.org/weak-map
+441 verbose url raw json-pointer
+442 verbose url resolving [ 'https://registry.npmjs.org/', './json-pointer' ]
+443 verbose url resolved https://registry.npmjs.org/json-pointer
+444 info trying registry request attempt 1 at 15:23:13
+445 verbose etag "CRJC6EIGSNQ5FVBJHFLWZWHAV"
+446 http GET https://registry.npmjs.org/json-pointer
+447 verbose url raw detect-indent
+448 verbose url resolving [ 'https://registry.npmjs.org/', './detect-indent' ]
+449 verbose url resolved https://registry.npmjs.org/detect-indent
+450 info trying registry request attempt 1 at 15:23:13
+451 verbose etag "A9XQREUMEQ0WA3UUS8ONAOJVV"
+452 http GET https://registry.npmjs.org/detect-indent
+453 verbose url raw es6-shim
+454 verbose url resolving [ 'https://registry.npmjs.org/', './es6-shim' ]
+455 verbose url resolved https://registry.npmjs.org/es6-shim
+456 info trying registry request attempt 1 at 15:23:13
+457 verbose etag "3WWY0Z15GIW0IHOXIYOAUUUGP"
+458 http GET https://registry.npmjs.org/es6-shim
+459 verbose url raw request
+460 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+461 verbose url resolved https://registry.npmjs.org/request
+462 info trying registry request attempt 1 at 15:23:13
+463 verbose etag "1IECX21XLZDGVXW8LDF6L6KQ2"
+464 http GET https://registry.npmjs.org/request
+465 verbose url raw minitable
+466 verbose url resolving [ 'https://registry.npmjs.org/', './minitable' ]
+467 verbose url resolved https://registry.npmjs.org/minitable
+468 info trying registry request attempt 1 at 15:23:13
+469 verbose etag "EPO3O0DC510R5LN5HU0KI81HT"
+470 http GET https://registry.npmjs.org/minitable
+471 verbose url raw event-stream
+472 verbose url resolving [ 'https://registry.npmjs.org/', './event-stream' ]
+473 verbose url resolved https://registry.npmjs.org/event-stream
+474 info trying registry request attempt 1 at 15:23:13
+475 verbose etag "1YQCZ5TR5VPQ3YPXEFPFVL9KV"
+476 http GET https://registry.npmjs.org/event-stream
+477 silly lockFile a420e038-thub-com-Bartvds-update-notifier git://github.com/Bartvds/update-notifier/
+478 silly lockFile a420e038-thub-com-Bartvds-update-notifier git://github.com/Bartvds/update-notifier/
+479 verbose about to build E:\WebstormProjects\realrigTypeScript\node_modules\tsd
+480 info E:\WebstormProjects\realrigTypeScript\node_modules\tsd unbuild
+481 info preuninstall tsd@0.5.7
+482 info uninstall tsd@0.5.7
+483 verbose true,E:\WebstormProjects\realrigTypeScript\node_modules,E:\WebstormProjects\realrigTypeScript\node_modules unbuild tsd@0.5.7
+484 verbose E:\WebstormProjects\realrigTypeScript\node_modules\.bin,[object Object] binRoot
+485 info postuninstall tsd@0.5.7
+486 error not found: git
+487 error Failed using git.
+487 error This is most likely not a problem with npm itself.
+487 error Please check if you have git installed and in your PATH.
+488 error System Windows_NT 6.1.7601
+489 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "tsd"
+490 error cwd E:\WebstormProjects\realrigTypeScript
+491 error node -v v0.10.28
+492 error npm -v 1.4.9
+493 error code ENOGIT
+494 verbose exit [ 1, true ]
